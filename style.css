@@ -4,6 +4,20 @@ body, p, li, h1, h2, h3, h4, h5
   font-size: 12px;
   font-weight: 300;
   color: #444;
-
-
+  font-family:'Open Sans', Arial, sans-serif;
 }
+
+/*Name edits*/
+title
+{
+  font-size: 4em;
+}
+ /*section titles*/
+
+ /*job titles*/
+
+ /*job organization*/
+
+ /*job dates*/
+
+ /*contact info, skills, education*/
