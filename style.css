@@ -1,6 +1,6 @@
 /*default fonts*/
-body, p, li, h1, h2, h3, h4, h5
-{
+body, p, li, h1, h2, h3, h4, h5{
+
   font-size: 12px;
   font-weight: 300;
   color: #444;
@@ -8,15 +8,17 @@ body, p, li, h1, h2, h3, h4, h5
 }
 
 /*Name edits*/
-h1
-{
+h1{
   text-align: center;
   font-size: 4em;
-  
-
-}
+  }
  /*section titles*/
-
+h2{
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #d1d1d1;
+  color: rgba(255, 255, 255, 255);
+}
  /*job titles*/
 
  /*job organization*/
