@@ -1,3 +1,4 @@
+/*styles for my resume*/
 /*default fonts*/
 body, p, li, h1, h2, h3, h4, h5{
   font-size: 12px;
@@ -12,7 +13,7 @@ h1{
 }
  /*section titles*/
 h2{
-  font-size: 24px;
+  font-size: 2em;
   text-transform: uppercase;
   background-color: #d1d1d1;
   color: rgba(255, 255, 255, 255);
@@ -20,11 +21,11 @@ h2{
  /*job titles*/
 h3{
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.5em;
 }
  /*job organization*/
 h4{
-  font-size: 16px;
+  font-size: 1.3em;
 }
  /*job dates*/
 h5{
@@ -32,5 +33,5 @@ h5{
 }
  /*contact info, skills, education*/
  li{
-   font-size: 14px;
+   font-size: 1.1em;
  }
