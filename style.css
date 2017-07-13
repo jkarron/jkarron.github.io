@@ -9,12 +9,13 @@
   color: #444;
   font-family:'Open Sans', Arial, sans-serif;
 }
-.menu {
+.menu li{
   font-family:'Open Sans', Arial, sans-serif;
   font-size: 1.1em;
   margin: auto;
   padding: 0px;
   text-align: center;
+  display: inline;
 }
 /*Name edits*/
 #name {
