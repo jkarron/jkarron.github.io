@@ -1,37 +1,45 @@
 /*styles for my resume*/
 /*default fonts*/
-body, p, li, h1, h2, h3, h4, h5 {
+#bottom {
   font-size: 12px;
   font-weight: 300;
   color: #444;
   font-family:'Open Sans', Arial, sans-serif;
 }
+.menu {
+  font-family:'Open Sans', Arial, sans-serif;
+}
 /*Name edits*/
 #name {
+  font-family:'Open Sans', Arial, sans-serif;
+  border-bottom: 1px solid #FDB020;
+  margin: 5px auto;
   text-align: center;
   font-size: 4em;
+  width: 60%;
+  min-width: 300px;
 }
  /*section titles*/
-h2 {
+.organization {
   font-size: 2em;
   text-transform: uppercase;
   background-color: #d1d1d1;
   color: rgba(255, 255, 255, 1);
 }
  /*job titles*/
-h3 {
+.jobtitle {
   font-weight: 600;
   font-size: 1.5em;
 }
  /*job organization*/
-h4 {
+.organization {
   font-size: 1.3em;
 }
  /*job dates*/
-h5 {
+.date {
   font-style: italic;
 }
  /*contact info, skills, education*/
-li {
+#skills .menu{
    font-size: 1.1em;
 }
