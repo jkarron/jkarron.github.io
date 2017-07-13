@@ -7,7 +7,7 @@ body, p, li, h1, h2, h3, h4, h5 {
   font-family:'Open Sans', Arial, sans-serif;
 }
 /*Name edits*/
-h1 {
+#name {
   text-align: center;
   font-size: 4em;
 }
