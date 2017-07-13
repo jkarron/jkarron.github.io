@@ -8,6 +8,9 @@
 }
 .menu {
   font-family:'Open Sans', Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
 }
 /*Name edits*/
 #name {
@@ -20,11 +23,20 @@
   min-width: 300px;
 }
  /*section titles*/
+ .sectionheader {
+   font-size: 2em;
+   margin: 0 0 10 0;
+   text-align: center;
+   width: 30%;
+   min-width: 150px;
+   border-bottom: 1px solid #FDB020;
+   background-color: #d1d1d1;
+   color: rgba(255, 255, 255, 1);
+ }
 .organization {
   font-size: 2em;
   text-transform: uppercase;
-  background-color: #d1d1d1;
-  color: rgba(255, 255, 255, 1);
+
 }
  /*job titles*/
 .jobtitle {
@@ -38,8 +50,20 @@
  /*job dates*/
 .date {
   font-style: italic;
+  margin: 2px 0 0 0;
+}
+/*description*/
+.description{
+  margin-top: 10;
 }
  /*contact info, skills, education*/
-#skills .menu{
+#skills{
    font-size: 1.1em;
+}
+
+#degrees{
+  margin-top: 5px;
+}
+#do{
+  margin-top: 5px;
 }
