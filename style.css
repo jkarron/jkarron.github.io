@@ -17,12 +17,14 @@
 
 }
 /*menu edits including font changes, margins, padding, and display*/
-.menu, li.alink{
+.menu{
   font-family:'Open Sans', Arial, sans-serif;
   font-size: 1.1em;
   margin: auto;
   padding: 0px;
   text-align: center;
+}
+.menu li{
   display: inline;
 }
 
