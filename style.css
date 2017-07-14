@@ -1,9 +1,10 @@
 /*styles for my resume*/
-/*default fonts*/
-*{
+/*box sizing edits*/
+* div{
   box-sizing: border-box;
-  }
-  /*top and bottom edits*/
+  font-weight: 300;
+}
+  /*all top, bottom, and menu edits, including margins, font size, weight, family, and color*/
 #top{
   margin-bottom: 35px;
 }
@@ -15,7 +16,8 @@
   margin-left: 10px;
 
 }
-.menu li{
+/*menu edits including font changes, margins, padding, and display*/
+.menu, li.alink{
   font-family:'Open Sans', Arial, sans-serif;
   font-size: 1.1em;
   margin: auto;
@@ -23,7 +25,8 @@
   text-align: center;
   display: inline;
 }
-/*Name edits*/
+
+/*Name edits including borders, margins, text alignment, and width*/
 #name {
   font-family:'Open Sans', Arial, sans-serif;
   border-bottom: 1px solid #FDB020;
@@ -33,7 +36,7 @@
   width: 60%;
   min-width: 300px;
 }
- /*section titles*/
+ /*sectionheader edits including margins, width, borders*/
 .sectionheader{
   margin: 10px;
   text-align: center;
@@ -45,7 +48,7 @@
   color: rgba(255, 255, 255, 1);
   font-size: 2em;
 }
- /*job titles*/
+ /*job section edits*/
  .job{
    margin-bottom: 15px;
  }
@@ -58,21 +61,21 @@
    font-size: 1.3em;
    color: rgba(255, 255, 255, 1);
 }
- /*job dates*/
+ /*job date edit margins*/
 .date {
   font-style: italic;
   margin-top: 2px;
 }
-/*descriptions*/
-.description li{
+/*description edit margins*/
+.description{
   font-size: 12px;
   margin-top: 10px;
 }
-/*experience edits*/
+/*experience edit margin*/
 #experience{
   margin-bottom: 20px;
 }
- /*contact info, skills, education*/
+ /*skills and education edit margins*/
 #degrees {
   margin-top: 5px;
 }
