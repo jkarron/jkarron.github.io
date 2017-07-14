@@ -1,15 +1,31 @@
 /*styles for my resume*/
 /*default fonts*/
+* {
+  box-sizing: border-box;
+}
+div {
+  font-weight: 300;
+}
+body {
+  font-size: 12px;
+}
+#top {
+  margin: 35px 0px 0px 0px;
+}
 #bottom {
   font-size: 12px;
   font-weight: 300;
   color: #444;
   font-family:'Open Sans', Arial, sans-serif;
+  margin: 0px 0px 0px 10px;
 }
 .menu {
   font-family:'Open Sans', Arial, sans-serif;
   margin: 0px;
   padding: 0px;
+  text-align: center;
+}
+.menu li {
   display: inline;
 }
 /*Name edits*/
@@ -25,7 +41,7 @@
  /*section titles*/
  .sectionheader {
    font-size: 2em;
-   margin: 0 0 10 0;
+   margin: 0px 0px 10px 0px;
    text-align: center;
    width: 30%;
    min-width: 150px;
@@ -36,9 +52,15 @@
 .organization {
   font-size: 2em;
   text-transform: uppercase;
-
+}
+/*experience edits*/
+.experience{
+  margin: 0px 0px 20px 0px;
 }
  /*job titles*/
+ .job {
+   margin: 0 0 15px 0;
+ }
 .jobtitle {
   font-weight: 600;
   font-size: 1.5em;
@@ -50,20 +72,20 @@
  /*job dates*/
 .date {
   font-style: italic;
-  margin: 2px 0 0 0;
+  margin: 2px auto;
 }
 /*description*/
-.description{
-  margin-top: 10;
+.description {
+  margin: 10px auto;
 }
  /*contact info, skills, education*/
-#skills{
+#skills {
    font-size: 1.1em;
 }
 
-#degrees{
-  margin-top: 5px;
+#degrees {
+  margin: 5px 0 0 0;
 }
-#do{
-  margin-top: 5px;
+#do {
+  margin: 5px 0 0 0;
 }
