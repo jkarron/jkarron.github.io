@@ -2,11 +2,9 @@
 /*default fonts*/
 * {
   box-sizing: border-box;
-
 }
 div {
   font-weight: 300;
-
 }
 body {
   font-size: 12px;
@@ -46,6 +44,12 @@ body {
 
 .menu li {
   display: inline;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #444;
 }
 /*Name edits*/
 #name {
@@ -101,7 +105,7 @@ ul {
  /*job titles*/
  .job {
    margin: 0 0 15px 0;
- }
+}
 
 .jobtitle {
   font-weight: 600;
@@ -123,14 +127,15 @@ ul {
  /*contact info, skills, education*/
  .contact{
    color: #444;
- }
+}
 
-#degrees #do {
+#degrees, #do {
   margin: 0 0 0 4%;
   width: 65%;
   float: left;
   -webkit-padding-start: 21px;
   border-left: 1px solid rgba(253, 176, 32, 0.3);
-  line-height: 3px;
-
+}
+#degrees li, #do li{
+  margin: 0 0 3px 0;
 }
