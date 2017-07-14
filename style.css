@@ -35,7 +35,6 @@ body {
   width: 95%;
   height: auto;
   overflow: auto;
-  border: 2px dashed blue;
 }
 
 .menu {
@@ -84,18 +83,16 @@ body {
   text-transform: uppercase;
 }
 /*experience edits*/
-#experience #skills #education {
+#experience, #skills, #education {
    font-size: 1.1em;
    border: 1px dashed red;
-   font-size: 1.1em;
-   border: 1px dashed red;
-   margin: 0px 0px 20px 0px;
+   margin: 0px auto 20px auto;
    padding: 10px;
    width: 90%;
    height: auto;
    overflow: auto;
    border: 1px solid #f2f2f2;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
  /*job titles*/
