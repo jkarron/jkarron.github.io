@@ -57,7 +57,6 @@ body {
   font-size: 4em;
   width: 60%;
   min-width: 300px;
-
 }
  /*section titles*/
  .sectionheader {
@@ -83,60 +82,54 @@ body {
 .organization {
   font-size: 2em;
   text-transform: uppercase;
-
 }
 /*experience edits*/
-.experience{
-  margin: 0px 0px 20px 0px;
-
+#experience #skills #education {
+   font-size: 1.1em;
+   border: 1px dashed red;
+   font-size: 1.1em;
+   border: 1px dashed red;
+   margin: 0px 0px 20px 0px;
+   padding: 10px;
+   width: 90%;
+   height: auto;
+   overflow: auto;
+   border: 1px solid #f2f2f2;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
 }
+
  /*job titles*/
  .job {
    margin: 0 0 15px 0;
-
  }
 
 .jobtitle {
   font-weight: 600;
   font-size: 1.5em;
-
 }
  /*job organization*/
 .organization {
   font-size: 1.3em;
-
 }
  /*job dates*/
 .date {
   font-style: italic;
   margin: 2px auto;
-
 }
 /*description*/
 .description {
   margin: 10px auto;
-
 }
  /*contact info, skills, education*/
  .contact{
    color: #444;
  }
-#skills {
-   font-size: 1.1em;
-   border: 1px dashed red;
-}
 
-#education {
-  font-size: 1.1em;
-  border: 1px dashed red;
-}
-
-
-#degrees {
+#degrees #do {
   margin: 5px auto;
-}
-
-#do {
-  margin: 5px auto;
-
+  margin: 0 0 0 4%;
+  width: 65%;
+  float: left;
+  -webkit-padding-start: 21px;
+  border-left: 1px solid rgba(253, 176, 32, 0.3);
 }
