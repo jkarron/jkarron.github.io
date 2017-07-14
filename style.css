@@ -1,4 +1,5 @@
 /*styles for my resume*/
+<<<<<<< HEAD
 /*default fonts*/
 * {
   box-sizing: border-box;
@@ -11,24 +12,51 @@ body {
 }
 #top {
   margin: 35px 0px 0px 0px;
+=======
+/*box sizing edits*/
+* div{
+  box-sizing: border-box;
+  font-weight: 300;
+}
+  /*all top, bottom, and menu edits, including margins, font size, weight, family, and color*/
+#top{
+  margin-bottom: 35px;
+>>>>>>> 9f3203f6068acf0fc9b316e56b39c0d567723148
 }
 #bottom {
   font-size: 12px;
   font-weight: 300;
   color: #444;
   font-family:'Open Sans', Arial, sans-serif;
+<<<<<<< HEAD
   margin: 0px 0px 0px 10px;
+=======
+  margin-left: 10px;
+
+>>>>>>> 9f3203f6068acf0fc9b316e56b39c0d567723148
 }
-.menu {
+/*menu edits including font changes, margins, padding, and display*/
+.menu{
   font-family:'Open Sans', Arial, sans-serif;
+<<<<<<< HEAD
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
 .menu li {
   display: inline;
+=======
+  font-size: 1.1em;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+>>>>>>> 9f3203f6068acf0fc9b316e56b39c0d567723148
 }
-/*Name edits*/
+.menu li{
+  display: inline;
+}
+
+/*Name edits including borders, margins, text alignment, and width*/
 #name {
   font-family:'Open Sans', Arial, sans-serif;
   border-bottom: 1px solid #FDB020;
@@ -38,6 +66,7 @@ body {
   width: 60%;
   min-width: 300px;
 }
+<<<<<<< HEAD
  /*section titles*/
  .sectionheader {
    font-size: 2em;
@@ -60,18 +89,37 @@ body {
  /*job titles*/
  .job {
    margin: 0 0 15px 0;
+=======
+ /*sectionheader edits including margins, width, borders*/
+.sectionheader{
+  margin: 10px;
+  text-align: center;
+  width: 30%;
+  min-width: 150px;
+  border-bottom: 1px solid #FDB020;
+  text-transform: uppercase;
+  background-color: #d1d1d1;
+  color: rgba(255, 255, 255, 1);
+  font-size: 2em;
+}
+ /*job section edits*/
+ .job{
+   margin-bottom: 15px;
+>>>>>>> 9f3203f6068acf0fc9b316e56b39c0d567723148
  }
 .jobtitle {
   font-weight: 600;
   font-size: 1.5em;
 }
  /*job organization*/
-.organization {
-  font-size: 1.3em;
+ .organization {
+   font-size: 1.3em;
+   color: rgba(255, 255, 255, 1);
 }
- /*job dates*/
+ /*job date edit margins*/
 .date {
   font-style: italic;
+<<<<<<< HEAD
   margin: 2px auto;
 }
 /*description*/
@@ -81,6 +129,31 @@ body {
  /*contact info, skills, education*/
 #skills {
    font-size: 1.1em;
+=======
+  margin-top: 2px;
+}
+/*description edit margins*/
+.description{
+  font-size: 12px;
+  margin-top: 10px;
+}
+/*experience edit margin*/
+#experience{
+  margin-bottom: 20px;
+}
+ /*skills and education edit margins*/
+#degrees {
+  margin-top: 5px;
+}
+#do{
+  margin-top: 5px;
+}
+#education{
+  margin-bottom: 20px;
+}
+#skills{
+margin-bottom: 20px;
+>>>>>>> 9f3203f6068acf0fc9b316e56b39c0d567723148
 }
 
 #degrees {
