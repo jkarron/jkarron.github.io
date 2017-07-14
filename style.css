@@ -30,8 +30,12 @@ body {
   font-weight: 300;
   color: #444;
   font-family:'Open Sans', Arial, sans-serif;
-  margin: 0px auto;
+  margin: 0px 0px;
   position: relative;
+  top: 120px;
+  width: 95%;
+  height: auto;
+  overflow: auto;
 
 }
 .menu {
