@@ -2,15 +2,27 @@
 /*default fonts*/
 * {
   box-sizing: border-box;
+
 }
 div {
   font-weight: 300;
+
 }
 body {
   font-size: 12px;
+  margin: auto;
+  padding: 0px;
+
 }
 #top {
-  margin: 35px 0px 0px 0px;
+  margin: 0px 0px 35px 0px;
+  padding: 0px 0px 10px 0px;
+  background-color: #FFFFFF;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+
 }
 #bottom {
   font-size: 12px;
@@ -18,15 +30,18 @@ body {
   color: #444;
   font-family:'Open Sans', Arial, sans-serif;
   margin: 0px 0px 0px 10px;
+
 }
 .menu {
   font-family:'Open Sans', Arial, sans-serif;
   margin: 0px;
   padding: 0px;
   text-align: center;
+
 }
 .menu li {
   display: inline;
+
 }
 /*Name edits*/
 #name {
@@ -37,6 +52,7 @@ body {
   font-size: 4em;
   width: 60%;
   min-width: 300px;
+
 }
  /*section titles*/
  .sectionheader {
@@ -48,44 +64,58 @@ body {
    border-bottom: 1px solid #FDB020;
    background-color: #d1d1d1;
    color: rgba(255, 255, 255, 1);
+
  }
+
 .organization {
   font-size: 2em;
   text-transform: uppercase;
+
 }
 /*experience edits*/
 .experience{
   margin: 0px 0px 20px 0px;
+
 }
  /*job titles*/
  .job {
    margin: 0 0 15px 0;
+
  }
+
 .jobtitle {
   font-weight: 600;
   font-size: 1.5em;
+
 }
  /*job organization*/
 .organization {
   font-size: 1.3em;
+
 }
  /*job dates*/
 .date {
   font-style: italic;
   margin: 2px auto;
+
 }
 /*description*/
 .description {
   margin: 10px auto;
+
 }
  /*contact info, skills, education*/
 #skills {
    font-size: 1.1em;
+
 }
 
 #degrees {
   margin: 5px auto;
+
 }
+
 #do {
   margin: 5px auto;
+
 }
