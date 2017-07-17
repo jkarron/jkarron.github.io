@@ -149,8 +149,8 @@ ul {
   #top{
     position: static;
   }
-  #bottom:{
-    border-top: 0px;
+  #bottom{
+    top: 0px;
   }
   .alljobs{
     width: 100%;
