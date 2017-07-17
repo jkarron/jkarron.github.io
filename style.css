@@ -139,7 +139,7 @@ ul {
 #degrees li, #do li{
   margin: 0 0 3px 0;
 }
-span{
+.bolding{
   font-weight: 600;
 }
 /*media quereies for various devices*/
