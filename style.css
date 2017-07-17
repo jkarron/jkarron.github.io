@@ -157,6 +157,9 @@ ul {
     float: none;
     margin: 0px;
   }
+  #experience{
+    border-left: none;
+  }
   .sectionheader{
     margin: 10px 15px center;
     padding: 5px 10px;
