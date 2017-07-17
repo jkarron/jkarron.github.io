@@ -141,22 +141,22 @@ ul {
 }
 
 /*media quereies for various devices*/
-/*extra small device*/
-@media only screen and () {
+/*extra small device (phone)*/
+@media only screen and (max-width: 767px) {
 
 }
 
-/*small device*/
-@media only screen and () {
+/*small device (tablet)*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
 
 }
 
-/*medium device*/
-@media only screen and () {
+/*medium device (desktop between 992 and 1199px)*/
+@media only screen and (min-width: 991px) and (max-width: 1199px){
 
 }
 
-/*large device*/
-@media only screen and () {
+/*large device (desktop larger than 1200px)*/
+@media only screen and (min-width: 1200px) {
 
 }
