@@ -159,6 +159,7 @@ ul {
     float: none;
     margin: 0px;
     border-left: none;
+    padding: 10px;
   }
   .sectionheader{
     margin: 10px 15px center;
@@ -210,14 +211,14 @@ ul {
     border-left: none;
   }
   .sectionheader{
-    margin: 7px 15px auto;
+    margin: 7px auto 15px auto;
     padding: 5px 10px;
-    width: 97%;
+    width: 100%;
     min-width: 0px;
     float: none;
   }
   .alljobs{
-    width: 100%;
+    width: 97%;
     float: none;
     margin: 0px;
     border-left: none;
