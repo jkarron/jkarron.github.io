@@ -139,3 +139,24 @@ ul {
 #degrees li, #do li{
   margin: 0 0 3px 0;
 }
+
+/*media quereies for various devices*/
+/*extra small device*/
+@media only screen and () {
+
+}
+
+/*small device*/
+@media only screen and () {
+
+}
+
+/*medium device*/
+@media only screen and () {
+
+}
+
+/*large device*/
+@media only screen and () {
+
+}
