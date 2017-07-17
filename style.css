@@ -143,7 +143,38 @@ ul {
 /*media quereies for various devices*/
 /*extra small device (phone)*/
 @media only screen and (max-width: 767px) {
-
+  #name{
+    font-size: 3em;
+  }
+  #top{
+    position: static;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  #bottom:{
+    border-top: 0px;
+  }
+  .alljobs{
+    width: 100%;
+    float: none;
+    margin: 0px;
+  }
+  .sectionheader{
+    margin: 10px 15px center;
+    padding: 5px 10px;
+    width: 97%;
+    min-width: 0;
+    text-align: center;
+  }
+  #degrees, #do{
+    margin: 15px 0px 2% 2%;
+    padding: 0px 20px;
+    width: auto;
+    float: none;
+    -webkit-padding-start: 0px;
+    border-left: none;
+  }
 }
 
 /*small device (tablet)*/
@@ -162,5 +193,16 @@ ul {
 
 /*large device (desktop larger than 1200px)*/
 @media only screen and (min-width: 1200px) {
+  #experience{
+    width: 60%;
+  }
+  #education, #skills{
 
+  }
+  .sectionheader{
+
+  }
+  .alljobs{
+
+  }
 }
