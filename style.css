@@ -195,14 +195,32 @@ ul {
 @media only screen and (min-width: 1200px) {
   #experience{
     width: 60%;
+    float: right;
   }
   #education, #skills{
-
+    width: 38.5%;
+    float: left;
+    overflow-x: hidden;
+  }
+  #degrees, #do{
+    margin: 15px 2% 0 2%;
+    width: 100%;
+    float: none;
+    -webkit-padding-start: 0px;
+    border-left: none;
   }
   .sectionheader{
-
+    margin: 7px 15px auto;
+    padding: 5px 10px;
+    width: 97%;
+    min-width: 0px;
+    float: none;
   }
   .alljobs{
-
+    width: 100%;
+    float: none;
+    margin: 0px;
+    border-left: none;
+    padding: 0px 10px 10px 10px;
   }
 }
