@@ -154,7 +154,7 @@ ul {
 }
 
 /*medium device (desktop between 992 and 1199px)*/
-@media only screen and (min-width: 991px) and (max-width: 1199px){
+@media only screen and (min-width: 992px) and (max-width: 1199px){
   #name{
     font-size: 3.9em;
   }
