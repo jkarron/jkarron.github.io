@@ -139,7 +139,9 @@ ul {
 #degrees li, #do li{
   margin: 0 0 3px 0;
 }
-
+span{
+  font-weight: 600;
+}
 /*media quereies for various devices*/
 /*extra small device (phone)*/
 @media only screen and (max-width: 767px) {
@@ -168,7 +170,7 @@ ul {
   #degrees, #do{
     margin: 15px 0px 2% 2%;
     padding: 0px 20px;
-    width: auto;
+    width: 100%;
     float: none;
     -webkit-padding-start: 0px;
     border-left: none;
