@@ -148,9 +148,6 @@ ul {
   }
   #top{
     position: static;
-    border-bottom: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
   }
   #bottom:{
     border-top: 0px;
