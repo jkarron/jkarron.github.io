@@ -10,7 +10,7 @@ body {
   background-color: #bada55;
 }
 
-.job{
+.job, .armchair, .medtech, .ESPN, .slate{
   height: 200px;
   border: 1px solid #ccc;
   float: left;
