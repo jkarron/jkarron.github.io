@@ -2,19 +2,41 @@
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
 /*raleway and merriweather fonts: font-family: 'Raleway', sans-serif;
 font-family: 'Merriweather', serif;*/
-.title, .contact{
-
+body {
+  font-size: 20px;
+  background-color: #778899;
+  margin: 0px;
+  padding: 50px;
+}
+.row{
+  background-color: #ffffff;
 }
 
 
-.experience{
+.job{
+  margin: 20px;
+}
+.title, .contact{
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.rightcontainer{
+  float: right;
+  position: relative;
+}
 
+.experience, .rightcontainer{
+  background-color: #ffffff;
+  border: 5px solid #97d289;
 }
 
 .details{
 
 }
+.li{
 
+}
 .description{
 
 }
@@ -23,48 +45,14 @@ font-family: 'Merriweather', serif;*/
 
 }
 
-.degree{
-
+.education, .skills, .organizations{
+  margin: 20px;
 }
 
-.skills{
-
-}
-
-.software{
-
-}
-
-.organizations{
-
-}
-
-.position{
-
-}
-
-
-
-
-body {
-  padding-top: 100px;
-  font-size: 20px;
-}
 
 .navbar{
 
 }
 .fa {
-  color: inherit;
-}
-.job, .experience{
-  border: 1px solid #ccc;
-  float: left;
-}
-
-.skills, .education, .organizations {
-  height: 200px;
-  border: 1px solid #ccc;
-  float: right;
-
+  color: #97d289;
 }
