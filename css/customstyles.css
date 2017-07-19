@@ -11,65 +11,42 @@ body {
   margin: 0px;
   padding: 50px;
 }
+.title, .contact{
+  text-align: center;
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  }
+
+.sectiontitle{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  margin: auto;
+  padding: 10px;
+}
+
+.program, .details, .software, .position{
+  font-family: 'Merriweather', serif;
+  margin: auto;
+  padding: 10px;
+
+}
+.job, .details, .description, .program, .degree, .software, .position{
+
+  margin: 10px;
+  padding: auto;
+}
 .navbar-brand{
   text-align: right;
 }
 .row{
   background-color: #ffffff;
-}
-
-
-.job{
-  margin: 20px;
-}
-.title, .contact{
-    background-color: #ffffff;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Merriweather', serif;
-    text-align: center;
-
-}
-.rightcontainer{
-  float: right;
-  position: relative;
-}
-
-.experience, .rightcontainer{
-  background-color: #ffffff;
   border: 5px solid #97d289;
 }
-.experience{
 
-}
-
-.sectiontitle{
-
-}
-.li{
-
-}
-.description{
-
-}
-
-.program{
-
-}
-
-.education, .skills, .organizations{
-  margin: 20px;
-}
-.job, .program, .software, .position{
-  font-family: 'Raleway', sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
-
-.navbar{
-
-}
 .fa {
   color: #97d289;
 }
@@ -81,7 +58,9 @@ body {
 
 /*small device (tablet)*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
+  .description{
 
+  }
 }
 
 /*medium device (desktop between 992 and 1199px)*/
