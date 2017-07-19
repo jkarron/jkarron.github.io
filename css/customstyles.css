@@ -2,14 +2,17 @@
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
 /*raleway and merriweather fonts: font-family: 'Raleway', sans-serif;
 font-family: 'Merriweather', serif;*/
+*{
+  box-sizing: border-box;
+}
 body {
-  font-size: 20px;
+  font-size: 16px;
   background-color: #778899;
   margin: 0px;
   padding: 50px;
 }
-.navbar{
-  text-align: center;
+.navbar-brand{
+  text-align: right;
 }
 .row{
   background-color: #ffffff;
@@ -21,8 +24,12 @@ body {
 }
 .title, .contact{
     background-color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
     text-align: center;
+
 }
 .rightcontainer{
   float: right;
@@ -33,8 +40,11 @@ body {
   background-color: #ffffff;
   border: 5px solid #97d289;
 }
+.experience{
 
-.details{
+}
+
+.sectiontitle{
 
 }
 .li{
@@ -51,7 +61,11 @@ body {
 .education, .skills, .organizations{
   margin: 20px;
 }
-
+.job, .program, .software, .position{
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
 
 .navbar{
 
@@ -78,5 +92,5 @@ body {
 
 /*large device (desktop larger than 1200px)*/
 @media only screen and (min-width: 1200px){
-  
+
 }
