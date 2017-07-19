@@ -11,14 +11,19 @@ body {
   margin: 0px;
   padding: 50px;
 }
+/*top edits*/
+#top{
+  border: 5px solid #97d289;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 .title, .contact{
   text-align: center;
   background-color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 30px;
   }
-
+/*title edits*/
 .sectiontitle{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -26,7 +31,11 @@ body {
   font-style: italic;
   margin: auto;
   padding: 10px;
+  text-transform: uppercase;
+  border: 2px solid #97d289;
+  text-align: center;
 }
+
 
 .program, .details, .software, .position{
   font-family: 'Merriweather', serif;
@@ -34,14 +43,23 @@ body {
   padding: 10px;
 
 }
-.job, .details, .description, .program, .degree, .software, .position{
-
-  margin: 10px;
-  padding: auto;
+.rightcontainer{
+  border: 2px solid #97d289;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 5px 10px;
+  border: 5px 10px;
 }
+
+#alljobs{
+  padding: 5px 10px;
+  border: 5px 10px;
+
+}
+
 .navbar-brand{
   text-align: right;
 }
+
 .row{
   background-color: #ffffff;
   border: 5px solid #97d289;
@@ -53,7 +71,8 @@ body {
 /*media queries*/
 /*extra small device (phone)*/
 @media only screen and (max-width: 767px) {
-
+  #top{
+    position: static;
 }
 
 /*small device (tablet)*/
@@ -71,5 +90,7 @@ body {
 
 /*large device (desktop larger than 1200px)*/
 @media only screen and (min-width: 1200px){
-
+  .rightcontainer{
+      float: right;
+    }
 }
