@@ -7,14 +7,14 @@ font-family: 'Merriweather', serif;*/
 }
 body {
   font-size: 16px;
-  background-color: #778899;
+  background-color: #97d289;
   margin: 0px;
   padding: 50px;
 }
 /*top edits*/
 #top{
-  border: 5px solid #97d289;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 5px solid #778899;
+  box-shadow: 4px 4px rgba(0,0,0,0.2);
 }
 .title, .contact{
   text-align: center;
@@ -32,7 +32,7 @@ body {
   margin: auto;
   padding: 10px;
   text-transform: uppercase;
-  border: 2px solid #97d289;
+  border: 2px solid #778899;
   text-align: center;
 }
 
@@ -43,8 +43,8 @@ body {
   padding: 10px;
 
 }
-.rightcontainer{
-  border: 2px solid #97d289;
+.rightcontainer, #alljobs, .row{
+  border: 2px solid #778899;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 5px 10px;
   border: 5px 10px;
