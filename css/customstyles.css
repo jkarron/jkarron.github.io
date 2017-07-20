@@ -1,6 +1,6 @@
 /* No CSS Reset with Bootstrap */
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
-/*raleway and merriweather fonts: font-family: 'Raleway', sans-serif;
+/* for font reference: raleway and merriweather fonts: font-family: 'Raleway', sans-serif;
 font-family: 'Merriweather', serif;*/
 *{
   box-sizing: border-box;
@@ -36,7 +36,6 @@ body {
     color: #97d289;
     display: inline;
     background-color: #778899;
-    box-sizing: border-box;
   }
 
 /*sectiontitle edits*/
@@ -58,7 +57,6 @@ body {
   font-family: 'Merriweather', serif;
   margin: auto;
   padding: 10px;
-
 }
 /*within program, details, and job edits. this is for the stuff positioned below it*/
 .description, .degree, .software, .position{
@@ -108,6 +106,9 @@ body {
   #top{
     font-size: 2em;
   }
+  .sectiontitle{
+    font-size: 2em;
+  }
 }
 
 /*large device (desktop larger than 1200px)*/
@@ -116,5 +117,6 @@ body {
       float: right;
     }
   .sectiontitle{
-    font-size: 3em;
+    font-size: 2.5em;
+  }
 }
