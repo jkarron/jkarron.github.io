@@ -40,12 +40,20 @@ body {
 }
 
 /*within each box edits. this is for experience education skills and orgs*/
-.program, .details, .software, .position, .job{
+.program, .details, .job{
   font-family: 'Merriweather', serif;
   margin: auto;
   padding: 10px;
 
 }
+
+.description, .degree, .software, .position{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: auto;
+  padding: 10px;
+}
+
 .rightcontainer, .row, #alljobs{
   border: 2px solid #778899;
   box-shadow: 4px 2px #778899;
@@ -53,13 +61,6 @@ body {
   border: 5px 10px;
   background-color: #ffffff;
 }
-
-
-
-.navbar-brand{
-  text-align: right;
-}
-
 
 .fa {
   color: #97d289;
@@ -71,6 +72,13 @@ body {
     position: static;
     font-size: 1.5em;
 }
+  .rightcontainer, #alljobs{
+    box-shadow: none;
+  }
+
+  .row{
+    box-shadow: 4px 2px #778899;
+  }
 
 /*small device (tablet)*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -81,7 +89,9 @@ body {
 
 /*medium device (desktop between 992 and 1199px)*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+  #top{
+    font-size: 2em;
+  }
 }
 
 
@@ -90,4 +100,6 @@ body {
   .rightcontainer{
       float: right;
     }
+  .sectiontitle{
+    font-size: 3em;
 }
