@@ -48,22 +48,13 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 5px 10px;
   border: 5px 10px;
-}
-
-#alljobs{
-  padding: 5px 10px;
-  border: 5px 10px;
-
+  background-color: #ffffff;
 }
 
 .navbar-brand{
   text-align: right;
 }
 
-.row{
-  background-color: #ffffff;
-  border: 5px solid #97d289;
-}
 
 .fa {
   color: #97d289;
