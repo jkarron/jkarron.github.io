@@ -25,6 +25,11 @@ body {
   font-weight: bold;
   font-size: 30px;
   }
+  /*social media outlets*/
+  .fa {
+    color: #97d289;
+    display: inline;
+  }
 /*title edits*/
 .sectiontitle{
   font-family: 'Raleway', sans-serif;
@@ -62,9 +67,6 @@ body {
   background-color: #ffffff;
 }
 
-.fa {
-  color: #97d289;
-}
 /*media queries*/
 /*extra small device (phone)*/
 @media only screen and (max-width: 767px) {
