@@ -161,12 +161,80 @@
     </div>
     <div class="col-sm-7 graphicblock">
       <div class="col-sm-12 graphiccontent">
-        <p>Germany adopted a tiki-taka style of play and it helped them maintain possession. Germay had the most passes per game at 726.2, more than tiki-taka kings Spain.</p>
-        <p>Germany's pass completion percentage also helped them maintain possession. Gemany was tied for second with Spain at 82% passes completed, behind only defensive monsters Italy.</p>
-        <p>While Germany ranked 21st in shots per game, they made more of them count. Germany lead the way with a 72% attempts on target rate and was ranked 4h a little over 10 attempts on target per game.</p>
-        <p>The more goals a team scores, the likelier they are to win. Germany lead the way in goal differential at +2.</p>
-        <p>Germany's ability to attack kept other teams defenses on their toes. With 44.8 attacks per game, Germany was able to play more of the game on offense.</p>
-        <p>Attacking from center allows for a better chance to score. 20% of Germany's attacks came from center throughout the tournament.</p>
+        <div id="container"></div>
+        <script src="Highcharts-5.0.13/code/highcharts.js"></script>
+        <script>
+        Highcharts.chart('container', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Average Number of Passes per Game by World Cup Quarterfinalists'
+            },
+            subtitle: {
+                text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+            },
+            xAxis: {
+                type: 'category',
+                labels: {
+                    rotation: -45,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Population (millions)'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+            },
+            series: [{
+                name: 'Population',
+                data: [
+                    ['Shanghai', 23.7],
+                    ['Lagos', 16.1],
+                    ['Istanbul', 14.2],
+                    ['Karachi', 14.0],
+                    ['Mumbai', 12.5],
+                    ['Moscow', 12.1],
+                    ['São Paulo', 11.8],
+                    ['Beijing', 11.7],
+                    ['Guangzhou', 11.1],
+                    ['Delhi', 11.1],
+                    ['Shenzhen', 10.5],
+                    ['Seoul', 10.4],
+                    ['Jakarta', 10.0],
+                    ['Kinshasa', 9.3],
+                    ['Tianjin', 9.3],
+                    ['Tokyo', 9.0],
+                    ['Cairo', 8.9],
+                    ['Dhaka', 8.9],
+                    ['Mexico City', 8.9],
+                    ['Lima', 8.9]
+                ],
+                dataLabels: {
+                    enabled: true,
+                    rotation: -90,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    format: '{point.y:.1f}', // one decimal
+                    y: 10, // 10 pixels down from the top
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            }]
+        });
+        </script>
       </div>
     </div>
   </div>
