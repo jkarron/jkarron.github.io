@@ -172,7 +172,7 @@
                 text: 'Average Number of Passes per Game by World Cup Quarterfinalists'
             },
             subtitle: {
-                text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+                text: 'Source: <a href="http://www.fifa.com/worldcup/archive/brazil2014/statistics/teams/passes.html">FIFA</a>'
             },
             xAxis: {
                 type: 'category',
@@ -187,26 +187,24 @@
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Population (millions)'
+                    text: 'Average number of passes per game'
                 }
             },
             legend: {
                 enabled: false
             },
-            tooltip: {
-                pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
-            },
+            
             series: [{
                 name: 'Population',
                 data: [
-                    ['Shanghai', 23.7],
-                    ['Lagos', 16.1],
-                    ['Istanbul', 14.2],
-                    ['Karachi', 14.0],
-                    ['Mumbai', 12.5],
-                    ['Moscow', 12.1],
-                    ['São Paulo', 11.8],
-                    ['Beijing', 11.7]
+                    ['Germany', 726],
+                    ['Argentina', 617],
+                    ['France', 552],
+                    ['Netherlands', 551],
+                    ['Belgium', 534],
+                    ['Brazil', 516],
+                    ['Costa Rica', 448],
+                    ['Colombia', 414]
 
                 ],
                 dataLabels: {
