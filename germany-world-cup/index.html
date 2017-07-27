@@ -161,10 +161,10 @@
     </div>
     <div class="col-sm-7 graphicblock">
       <div class="col-sm-12 graphiccontent">
-        <div id="container"></div>
+        <div id="passeschart"></div>
         <script src="Highcharts-5.0.13/code/highcharts.js"></script>
         <script>
-        Highcharts.chart('container', {
+        Highcharts.chart('passeschart', {
             chart: {
                 type: 'bar'
             },
@@ -214,11 +214,11 @@
                     rotation: 0,
                     color: '#000000',
                     align: 'right',
-                    format: '{point.y:.0f}', // one decimal
-                    y: 0, // 0 pixels don from the top
+                    format: '{point.y:.0f}', // no decimal
+                    y: 0, // 0 pixels down from the top
                     style: {
-                        fontSize: '13px',
-                        fontFamily: 'Verdana, sans-serif'
+                        fontSize: '10px',
+                        fontFamily: '"Lucida Grande", Arial, Helvetica, sans-serif'
                     }
                 }
             }]
