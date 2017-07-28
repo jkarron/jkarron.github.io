@@ -264,7 +264,7 @@
     xAxis: {
         title: {
             enabled: true,
-            text: 'Height (cm)'
+            text: 'Average of Goals For Per Game'
         },
         startOnTick: true,
         endOnTick: true,
@@ -272,7 +272,7 @@
     },
     yAxis: {
         title: {
-            text: 'Weight (kg)'
+            text: 'Average of Goals Against Per Game'
         }
     },
     legend: {
@@ -281,9 +281,9 @@
         verticalAlign: 'top',
         x: 100,
         y: 70,
-        floating: true,
+        floating: false,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-        borderWidth: 1
+        borderWidth: false,
     },
     plotOptions: {
         scatter: {
