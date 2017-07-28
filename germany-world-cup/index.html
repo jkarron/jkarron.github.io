@@ -276,14 +276,7 @@
         }
     },
     legend: {
-        layout: 'horizontal',
-        align: 'bottom',
-        verticalAlign: 'top',
-        x: 100,
-        y: 70,
-        floating: false,
-        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-        borderWidth: false,
+
     },
     plotOptions: {
         scatter: {
@@ -304,8 +297,8 @@
                 }
             },
             tooltip: {
-                headerFormat: '<b>{series.name}</b><br>',
-                pointFormat: '{point.x} cm, {point.y} kg'
+                headerFormat: '<b>{point.key}</b><br>',
+                pointFormat: '<b>Average Goals For:</b> {point.x} <b>Average Goals Against:</b> {point.y}'
             }
         }
     },
