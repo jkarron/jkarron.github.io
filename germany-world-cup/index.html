@@ -258,6 +258,9 @@
     subtitle: {
         text: 'FIFA.com'
     },
+    credits: {
+      enabled: false
+    },
     xAxis: {
         title: {
             enabled: true,
@@ -273,8 +276,8 @@
         }
     },
     legend: {
-        layout: 'vertical',
-        align: 'left',
+        layout: 'horizontal',
+        align: 'bottom',
         verticalAlign: 'top',
         x: 100,
         y: 70,
@@ -328,7 +331,7 @@
 
     }, {
         name: 'Eliminated Round of 32',
-        color: 'rgba(119, 152, 191, .5)',
+        color: '#7cb5ec',
         data: [{ x: 2, y: 2, name: 'Croatia', dataLabels: { enabled: true, format: 'Croatia' }},
 { x: 1.4, y: 1.3, name: 'Bosnia and Herzegovina', dataLabels: { enabled: true, format: 'Bosnia and Herzegovina' }},
 { x: 1.4, y: 1.7, name: 'Côte d\'Ivoire', dataLabels: { enabled: true, format: 'Côte d\'Ivoire' }},
