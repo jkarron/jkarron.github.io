@@ -7,21 +7,24 @@ font-family: 'Raleway', sans-serif;*/
 body {
   padding-top: 50px;
   font-size: 12px;
-  font-family: 'Open Sans', Helvetica,sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #000099;
+  color: #eee;
 }
 .topsection{
   text-align: center;
   margin: 20px 0px 0px 0px;
 }
 .topbox, h1{
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
+  color: #cc3300;
+
 }
 .byline{
   font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #777;
+  font-weight: 500;
+  color: #cc3300;
   margin: 15px 0px 0px 20px;
   font-style: italic;
 }
@@ -43,16 +46,18 @@ p, .lead{
   font-size: 2.5rem;
   margin: 0px;
   padding: 0px;
+  color: #00ccff;
 }
 .graphictext{
   margin: 15px 0px 0px 0px;
+  font-family: 'Bitter', serif;
 }
 .graphictext, p{
   font-size: 1.35rem;
 }
 .graphicblock{
   padding: 0px 20px;
-  border-left: 2px solid #777;
+  border: 2px solid #cc3300;
 }
 
 /*legend box section*/
@@ -62,7 +67,6 @@ p, .lead{
 .legendbox{
   width: 200px;
   height: 200px;
-  border: 1px solid #aaa;
   z-index: 1;
   position: absolute;
   bottom: 10px;
