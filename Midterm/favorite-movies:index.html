@@ -63,10 +63,11 @@
     <div class="row graphiccontainer" id="one">
       <div class="textblock col-sm-12">
         <div class="col-sm-12 graphictitle">
-          <h2>Area For First Graphic (Slideshow)</h2>
+          <h2>Top Grossing Films Per Decade</h2>
         </div>
         <div class="col-sm-12 graphictext">
-          <p>Description of that chart</p>
+          <p>One way to rate how good a film is to look at how much money it made.</p>
+          <p>The films in this slideshow were the highest grossing in their decade, starting from the 1920's until the 2010's.</p>
         </div>
       </div>
       <div class="col-sm-12 graphicblock">
@@ -82,10 +83,11 @@
     <div class="row graphiccontainer" id="two">
       <div class="textblock col-sm-12">
         <div class="col-sm-12 graphictitle">
-          <h2>Second Graphic Here (Map)</h2>
+          <h2>Top 20 International Box Office Market Countries</h2>
         </div>
         <div class="col-sm-12 graphictext">
-          <p>Description of that map</p>
+          <p>A second way to quantify how good a movie was is to examine it on an international scale.</p>
+          <p>This map shows the top 20 international box office countries, including that countrie's population and international box office sales in billions.</p>
         </div>
       </div>
       <div class="col-sm-12 graphicblock">
@@ -109,18 +111,181 @@
   <div class="row graphiccontainer" id="three">
     <div class="textblock col-sm-12">
         <div class="col-sm-12 graphictitle">
-          <h2>Third Graphic Here (Highchart column)</h2>
+          <h2>Number of Top Movies Per Decade</h2>
         </div>
         <div class="col-sm-12 graphictext">
-          <p>Movies per decade highcharts.</p>
+          <p>To calculate how good a decade was for films, this chart shows how many films were in IMDB's top 250 per decade.</p>
+          <p>This chart shows how that number has changed over time, with a median line to show the average.</p>
         </div>
     </div>
       <div class="col-sm-12 graphicblock">
         <div class="col-sm-12 graphiccontent">
-          <div id="countrymoney"></div>
+          <div id="filmyear"></div>
           <script src="Highcharts-5.0.13/code/highcharts.js"></script>
           <script>
-          Highcharts.chart('countrymoney', {
+          Highcharts.chart('filmyear', {
+
+    title: {
+        text: 'Solar Employment Growth by Sector, 2010-2016'
+    },
+
+    subtitle: {
+        text: 'Source: thesolarfoundation.com'
+    },
+
+    credits: {
+      enabled: false
+    },
+
+    yAxis: {
+        title: {
+            text: 'Number of Employees'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            pointStart: 2010
+        }
+    },
+
+    series: [{
+        name: 'Installation',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: 'Manufacturing',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    }, {
+        name: 'Sales & Distribution',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    }, {
+        name: 'Project Development',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: 'Other',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    }]
+
+});
+
+
+          </script>
+        </div><!--closes .graphiccontent-->
+      </div><!--closes.graphicblock-->
+    </div><!--closes .graphiccontainer-->
+
+      <!--end of graphic container 3 section-->
+      <!--insert concatenated data above. Copy bottom Highchart stuff to make sure format is good to go. Watch out for apostrophe S's-->
+
+      <!--start of graphic container 4 section-->
+  <div class="row graphiccontainer" id="four">
+    <div class="textblock col-sm-12">
+      <div class="col-sm-12 graphictitle">
+        <h2>Directors Who Excel at Movie Making</h2>
+      </div>
+      <div class="col-sm-12 graphictext">
+        <p>To be a good director means to produce consistently groundbreaking and boundary pushing work.</p>
+        <p>These directors have two or more movies in IMDB's Top 250 list and appear on Box Office Mojo's Top Adjusted Gross of All Time list.</p>
+      </div>
+    </div>
+    <div class="col-sm-7 graphicblock">
+      <div class="col-sm-12 graphiccontent">
+        <div id="director"></div>
+        <script src="Highcharts-5.0.13/code/highcharts.js"></script>
+        <script>
+        Highcharts.chart('director', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Historic World Population by Region'
+    },
+    subtitle: {
+        text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+        categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Population (millions)',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' millions'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Year 1800',
+        data: [107, 31, 635, 203, 2]
+    }, {
+        name: 'Year 1900',
+        data: [133, 156, 947, 408, 6]
+    }, {
+        name: 'Year 2012',
+        data: [1052, 954, 4250, 740, 38]
+    }]
+});
+
+        </script>
+      </div> <!--closes graphiccontent-->
+    </div><!--closes graphicblock-->
+  </div><!--closes graphiccontainer-->
+<!--figure out why this highcharts graphic won't show up-->
+  <!--start of graphic container 5-->
+  <div class="row graphiccontainer" id="five">
+    <div class="textblock col-sm-12">
+      <div class="col-sm-12 graphictitle">
+        <h2>How Good Was Each Star Wars Trilogy?</h2>
+      </div>
+      <div class="col-sm-12 graphictext">
+        <p>The original Star Wars Trilogy is considered by many to be one of the greatest trilogies of all time.</p>
+        <p>But how does it fare against the other Star Wars Trilogies?</p>
+        <p>Using the adjusted gross income for each movie in each series in addition to their IMDB ranking, we can rank each trilogy against each other.</p>
+      </div>
+    </div>
+    <div class="col-sm-12 graphicblock">
+      <div class="col-sm-12 graphiccontent">
+        <div id="starwars"></div>
+        <script src="Highcharts-5.0.13/code/highcharts.js"></script>
+        <script>
+        Highcharts.chart('starwars', {
     chart: {
         type: 'column'
     },
@@ -188,181 +353,6 @@
 
     }]
 });
-
-          </script>
-        </div><!--closes .graphiccontent-->
-      </div><!--closes.graphicblock-->
-    </div><!--closes .graphiccontainer-->
-
-      <!--end of graphic container 3 section-->
-      <!--insert concatenated data above. Copy bottom Highchart stuff to make sure format is good to go. Watch out for apostrophe S's-->
-
-      <!--start of graphic container 4 section-->
-  <div class="row graphiccontainer" id="four">
-    <div class="textblock col-sm-12">
-      <div class="col-sm-12 graphictitle">
-        <h2>Films for directors highcharts</h2>
-      </div>
-      <div class="col-sm-12 graphictext">
-        <p>explanation of directors making money w/ multiple films.</p>
-      </div>
-    </div>
-    <div class="col-sm-7 graphicblock">
-      <div class="col-sm-12 graphiccontent">
-        <div id="countrymoney"></div>
-        <script src="Highcharts-5.0.13/code/highcharts.js"></script>
-        <script>
-        Highcharts.chart('countrymoney', {
-  chart: {
-      type: 'column'
-  },
-  title: {
-      text: 'Monthly Average Rainfall'
-  },
-  subtitle: {
-      text: 'Source: WorldClimate.com'
-  },
-  credits: {
-    enabled: false
-  },
-  xAxis: {
-      categories: [
-          'Jan',
-          'Feb',
-          'Mar',
-          'Apr',
-          'May',
-          'Jun',
-          'Jul',
-          'Aug',
-          'Sep',
-          'Oct',
-          'Nov',
-          'Dec'
-      ],
-      crosshair: true
-  },
-  yAxis: {
-      min: 0,
-      title: {
-          text: 'Rainfall (mm)'
-      }
-  },
-  tooltip: {
-      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-      pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-          '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-      footerFormat: '</table>',
-      shared: true,
-      useHTML: true
-  },
-  plotOptions: {
-      column: {
-          pointPadding: 0.2,
-          borderWidth: 0
-      }
-  },
-  series: [{
-      name: 'Tokyo',
-      data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
-  }, {
-      name: 'New York',
-      data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
-
-  }, {
-      name: 'London',
-      data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
-
-  }, {
-      name: 'Berlin',
-      data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
-
-  }]
-});
-
-        </script>
-      </div> <!--closes graphiccontent-->
-    </div><!--closes graphicblock-->
-  </div><!--closes graphiccontainer-->
-<!--figure out why this highcharts graphic won't show up-->
-  <!--start of graphic container 5-->
-  <div class="row graphiccontainer" id="five">
-    <div class="textblock col-sm-12">
-      <div class="col-sm-12 graphictitle">
-        <h2>Star wars highcharts</h2>
-      </div>
-      <div class="col-sm-12 graphictext">
-        <p>explanation of starwars info.</p>
-      </div>
-    </div>
-    <div class="col-sm-12 graphicblock">
-      <div class="col-sm-12 graphiccontent">
-        <div id="passeschart"></div>
-        <script src="Highcharts-5.0.13/code/highcharts.js"></script>
-        <script>
-        Highcharts.chart('passeschart', {
-            chart: {
-                type: 'bar'
-            },
-            title: {
-                text: 'Average Number of Passes per Game by World Cup Quarterfinalists'
-            },
-            subtitle: {
-                text: 'Source: <a href="http://www.fifa.com/worldcup/archive/brazil2014/statistics/teams/passes.html">FIFA</a>'
-            },
-            credits: {
-              enabled: false
-            },
-            xAxis: {
-                type: 'category',
-                labels: {
-                    rotation: 0,
-                    style: {
-                        fontSize: '13px',
-                        fontFamily: 'Verdana, sans-serif'
-                    }
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Average number of passes per game'
-                }
-            },
-            legend: {
-                enabled: false
-            },
-            tooltip: {
-                enabled: false
-            },
-            series: [{
-                name: 'Population',
-                data: [
-                    ['Germany', 726],
-                    ['Argentina', 617],
-                    ['France', 552],
-                    ['Netherlands', 551],
-                    ['Belgium', 534],
-                    ['Brazil', 516],
-                    ['Costa Rica', 448],
-                    ['Colombia', 414]
-
-                ],
-                dataLabels: {
-                    enabled: true,
-                    rotation: 0,
-                    color: '#000000',
-                    align: 'right',
-                    format: '{point.y:.0f}', // no decimal
-                    y: 0, // 0 pixels down from the top
-                    style: {
-                        fontSize: '10px',
-                        fontFamily: '"Lucida Grande", Arial, Helvetica, sans-serif'
-                    }
-                }
-            }]
-        });
         </script>
       </div>
     </div>
@@ -374,10 +364,11 @@
   <div class="row graphiccontainer" id="six">
     <div class="textblock col-sm-12">
       <div class="col-sm-12 graphictitle">
-        <h2>My Own Chart (godfather highchart)</h2>
+        <h2>How Special Were Godfather 1 and 2?</h2>
       </div>
       <div class="col-sm-12 graphictext">
-        <p>Highchart explaining how good godfather 1/2 are (rank them against other series in imdb 250)</p>
+        <p>Francis Ford Coppola's Godfather one and two show how hard it is to make a good sequel.</p>
+        <p>Using the IMDB Top 250 Rankings, I've compared The Godfather against other movies that have sequels in the Top 250.</p>
       </div>
     </div>
     <div class="col-sm-12 graphicblock">
@@ -487,6 +478,7 @@
       </div>
     </div>
   </div>
+  <footer>Copyright Julia Storella Karron 2017</footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
