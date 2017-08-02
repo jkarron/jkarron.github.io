@@ -68,6 +68,7 @@
         <div class="col-sm-12 graphictext">
           <p>One way to rate how good a film is to look at how much money it made.</p>
           <p>The films in this slideshow were the highest grossing in their decade, starting from the 1920's until the 2010's.</p>
+          <p>Data provided by <a href="http://www.boxofficemojo.com/alltime/adjusted.htm" target="_blank">Box Office Mojo</a>.</p>
         </div>
       </div>
       <div class="col-sm-12 graphicblock">
@@ -212,16 +213,13 @@
         type: 'bar'
     },
     title: {
-        text: 'Directors Who Appear on Both the IMDB 250 and Box Office Mojo'
+        text: 'Directors In IMDB Top 20 and Box Office Mojo Top Adjusted Gross of All Time List'
     },
     subtitle: {
-        text: 'Source: http://www.imdb.com/chart/top and http://www.boxofficemojo.com/alltime/adjusted.htm'
-    },
-    credits: {
-      enabled: false
+        text: 'Source: IMDB and Box Office Mojo'
     },
     xAxis: {
-        categories: ['Disney\/Pixar', 'Steven Spielberg', 'George Lucas', 'Peter Jackson', 'Christopher Nolan', 'Alfred Hitchcock', 'George Roy Hill', 'Robert Zemeckis'],
+        categories: ['Director'],
         title: {
             text: null
         }
@@ -229,16 +227,15 @@
     yAxis: {
         min: 0,
         title: {
-            text: 'Number of Films',
-            align: 'right'
+            text: 'Number of films',
+            align: 'high'
         },
         labels: {
-
+            overflow: 'justify'
         }
     },
     tooltip: {
-        pointFormat: '',
-        headerFormat: ''
+      headerFormat: '<b>{series.name} had [data--could not figure this aspect out] Movies on the IMDB Top 250 and Box Office Mojo Top 200 Adjusted Grossing Movies</b><br>'
     },
     plotOptions: {
         bar: {
@@ -248,16 +245,21 @@
         }
     },
     legend: {
-
+        enabled: false
     },
     credits: {
         enabled: false
     },
-    series: [{
-        name: 'number of movies',
-        data: [8, 5, 3, 3, 2, 2, 2, 2]
-    }]
+    series: [{name: 'Disney/Pixar', data: [8], color: '#3D5A80'},
+{name: 'Steven Spielberg', data: [5], color: '#3D5A80'},
+{name: 'George Lucas', data: [3], color: '#3D5A80'},
+{name: 'Peter Jackson', data: [3], color: '#3D5A80'},
+{name: 'Christoper Nolan', data: [2], color: '#3D5A80'},
+{name: 'Alfred Hitchcock', data: [2], color: '#3D5A80'},
+{name: 'George Roy Hill', data: [2], color: '#3D5A80'},
+{name: 'Robert Zemeckis', data: [2], color: '#3D5A80'},]
 });
+
 
         </script>
       </div> <!--closes graphiccontent-->
@@ -292,6 +294,9 @@
     subtitle: {
         text: 'Source: IMDB'
     },
+    credits: {
+      enabled: false
+    },
     xAxis: {
         title: {
             enabled: true,
@@ -307,14 +312,7 @@
         }
     },
     legend: {
-        layout: 'vertical',
-        align: 'bottom',
-        verticalAlign: 'top',
-        x: 100,
-        y: 70,
-        floating: true,
-        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-        borderWidth: 1
+
     },
     plotOptions: {
         scatter: {
@@ -343,22 +341,22 @@
     series: [{
         name: 'Original Trilogy',
         color: '#98C1D9',
-        data: [[8.6,  460998007,],
-[8.7,  290475067,],
-[8.3,  309306177,]]
+        data: [{x:  1977,  y: 1583483200, name: 'Star Wars', dataLabels: { enabled: true,  format: 'Star Wars'}},
+{x:  1980,  y: 872825900, name: 'The Empire Strikes Back', dataLabels: { enabled: true,  format: 'The Empire Strikes Back'}},
+{x:  1983,  y: 836188200, name: 'Return of the Jedi', dataLabels: { enabled: true,  format: 'Return of the Jedi'}},]
 
     }, {
         name: 'Prequels',
         color: '#EE6C4D',
-        data: [[6.5,  474544677,],
-[7.6,  380270577,],
-[6.6,  310676740,]]
+        data: [{x:  1999,  y: 802874300, name: 'Star Wars: Episode I - The Phantom Menace', dataLabels: { enabled: true,  format: 'Star Wars: Episode I - The Phantom Menace'}},
+{x:  2005,  y: 527395500, name: 'Star Wars: Episode III - Revenge of the Sith', dataLabels: { enabled: true,  format: 'Star Wars: Episode III - Revenge of the Sith'}},
+{x:  2002,  y: 475334700, name: 'Star Wars: Episode II - Attack of the Clones', dataLabels: { enabled: true,  format: 'Star Wars: Episode II - Attack of the Clones'}},]
 
     }, {
         name: 'New Generation',
         color: '#293241',
-        data: [[8,  936662225,],
-[7.9,  532177324,]]
+        data: [{x:  2015,  y: 961143200, name: 'Star Wars: The Force Awakens', dataLabels: { enabled: true,  format: 'Star Wars: The Force Awakens'}},
+{x:  2016,  y: 537326000, name: 'Rogue One: A Star Wars Story', dataLabels: { enabled: true,  format: 'Rogue One: A Star Wars Story'}},]
 
     }
   ]
@@ -372,6 +370,7 @@
   <!--All of this highchart data in here is going to be edited/new for the project. Structure of this is what matters for data concatenation.-->
 
   <!--start of graphic container 6-->
+
   <div class="row graphiccontainer" id="six">
     <div class="textblock col-sm-12">
       <div class="col-sm-12 graphictitle">
@@ -380,6 +379,7 @@
       <div class="col-sm-12 graphictext">
         <p>Francis Ford Coppola's Godfather one and two show how hard it is to make a good sequel.</p>
         <p>Using the IMDB Top 250 Rankings, I've compared The Godfather against other movies that have sequels in the Top 250.</p>
+        <p>The closer to zero a data point is, the closer that movies first and last rating were.</p>
       </div>
     </div>
     <div class="col-sm-12 graphicblock">
@@ -437,55 +437,26 @@
             },
             tooltip: {
                 headerFormat: '<b>{point.key}</b><br>',
-                pointFormat: '<b>Average Goals For:</b> {point.x}<br> <b>Average Goals Against:</b> {point.y}'
+                pointFormat: '<b>First Appearance Ranking:</b> {point.x}<br> <b>Second Appearance Ranking:</b> {point.y}'
             }
         }
     },
     series: [{
-        name: 'Reached Round 16',
-        color: '#FF3A20',
-        data: [{ x: 2.6, y: 0.6, name: 'Germany', dataLabels: { enabled: true, format: 'Germany' }},
-{ x: 2.4, y: 0.8, name: 'Colombia', dataLabels: { enabled: true, format: 'Colombia' }},
-{ x: 2.2, y: 0.6, name: 'Netherlands', dataLabels: { enabled: true, format: 'Netherlands' }},
-{ x: 2, y: 0.6, name: 'France', dataLabels: { enabled: true, format: 'France' }},
-{ x: 1.8, y: 1.8, name: 'Algeria', dataLabels: { enabled: true, format: 'Algeria' }},
-{ x: 1.8, y: 1.8, name: 'Switzerland', dataLabels: { enabled: true, format: 'Switzerland' }},
-{ x: 1.6, y: 2, name: 'Brazil', dataLabels: { enabled: true, format: 'Brazil' }},
-{ x: 1.5, y: 1, name: 'Chile', dataLabels: { enabled: true, format: 'Chile' }},
-{ x: 1.3, y: 0.8, name: 'Mexico', dataLabels: { enabled: true, format: 'Mexico' }},
-{ x: 1.3, y: 1.5, name: 'USA', dataLabels: { enabled: true, format: 'USA' }},
-{ x: 1.2, y: 0.6, name: 'Belgium', dataLabels: { enabled: true, format: 'Belgium' }},
-{ x: 1.2, y: 0.6, name: 'Argentina', dataLabels: { enabled: true, format: 'Argentina' }},
-{ x: 1, y: 0.4, name: 'Costa Rica', dataLabels: { enabled: true, format: 'Costa Rica' }},
-{ x: 1, y: 1.5, name: 'Uruguay', dataLabels: { enabled: true, format: 'Uruguay' }},
-{ x: 0.8, y: 1.3, name: 'Greece', dataLabels: { enabled: true, format: 'Greece' }},
-{ x: 0.8, y: 1.3, name: 'Nigeria', dataLabels: { enabled: true, format: 'Nigeria' }}]
-
-    }, {
-        name: 'Eliminated Round of 32',
-        color: '#7cb5ec',
-        data: [{ x: 2, y: 2, name: 'Croatia', dataLabels: { enabled: true, format: 'Croatia' }},
-{ x: 1.4, y: 1.3, name: 'Bosnia and Herzegovina', dataLabels: { enabled: true, format: 'Bosnia and Herzegovina' }},
-{ x: 1.4, y: 1.7, name: 'Côte d\'Ivoire', dataLabels: { enabled: true, format: 'Côte d\'Ivoire' }},
-{ x: 1.4, y: 2, name: 'Ghana', dataLabels: { enabled: true, format: 'Ghana' }},
-{ x: 1.4, y: 2.3, name: 'Spain', dataLabels: { enabled: true, format: 'Spain' }},
-{ x: 1.4, y: 2.3, name: 'Portugal', dataLabels: { enabled: true, format: 'Portugal' }},
-{ x: 1, y: 1, name: 'Ecuador', dataLabels: { enabled: true, format: 'Ecuador' }},
-{ x: 1, y: 2, name: 'Korea Republic', dataLabels: { enabled: true, format: 'Korea Republic' }},
-{ x: 1, y: 3, name: 'Australia', dataLabels: { enabled: true, format: 'Australia' }},
-{ x: 0.7, y: 1, name: 'Italy', dataLabels: { enabled: true, format: 'Italy' }},
-{ x: 0.7, y: 1, name: 'Russia', dataLabels: { enabled: true, format: 'Russia' }},
-{ x: 0.7, y: 1.3, name: 'England', dataLabels: { enabled: true, format: 'England' }},
-{ x: 0.7, y: 2, name: 'Japan', dataLabels: { enabled: true, format: 'Japan' }},
-{ x: 0.4, y: 1.3, name: 'Iran', dataLabels: { enabled: true, format: 'Iran' }},
-{ x: 0.4, y: 2.7, name: 'Honduras', dataLabels: { enabled: true, format: 'Honduras' }},
-{ x: 0.4, y: 3, name: 'Cameroon', dataLabels: { enabled: true, format: 'Cameroon' }},]
+        name: 'Movie First and Last Ranking',
+        data: [{x:  2,  y: 3, name: 'Godfather Series', color: '#3D5A80', dataLabels: { enabled: true,  format: 'Godfather Series'}},
+{x:  4,  y: 64, name: 'Dark Knight Series', color: '#98C1D9', dataLabels: { enabled: true,  format: 'Dark Knight Series'}},
+{x:  8,  y: 15, name: 'Lord of the Rings Trilogy', dataLabels: { enabled: true,  format: 'Lord of the Rings Trilogy'}},
+{x:  39,  y: 112, name: 'Indiana Jones', color: '#EE6C4D', dataLabels: { enabled: true,  format: 'Indiana Jones'}},
+{x:  43,  y: 230, name: 'Terminator', color: '#3D5A80', dataLabels: { enabled: true,  format: 'Terminator'}},
+{x:  90,  y: 95, name: 'Toy Story Trilogy', color: '#98C1D9', dataLabels: { enabled: true,  format: 'Toy Story Trilogy'}},
+{x:  101,  y: 186, name: 'Monty Python', color: '#E0FBFC', dataLabels: { enabled: true,  format: 'Monty Python'}},
+{x:  13,  y: 216, name: 'Star Wars (All Generations)', color: '#98C1D9', dataLabels: { enabled: true,  format: 'Star Wars (All Generations)'}},]
     }]
 });
 
           </script>
           <!--end of graphic container 6/my own high chart example-->
-        </div>
+        </div> <!--or colors: #3D5A80 (purple navy), #98C1D9 (pale cerulean), #E0FBFC (light cyan), #EE6C4D(light red ochre), and #293241 (gunmetal)-->
       </div>
     </div>
   </div>
