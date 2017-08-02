@@ -88,7 +88,7 @@
         </div>
         <div class="col-sm-12 graphictext">
           <p>A second way to quantify how good a movie was is to examine it on an international scale.</p>
-          <p>This map shows the top 20 international box office countries, including that countrie's population and international box office sales in billions.</p>
+          <p>This map shows the top 20 international box office countries, including that country's population and international box office sales in billions.</p>
         </div>
       </div>
       <div class="col-sm-12 graphicblock">
@@ -334,29 +334,29 @@
             },
             tooltip: {
                 headerFormat: '<b>{series.name}</b><br>',
-                pointFormat: '{point.x} IMDB rating, {point.y} Adjusted Gross Income'
+                pointFormat: '{point.x} IMDB rating, ${point.y} Adjusted Gross Income'
             }
         }
     },
     series: [{
         name: 'Original Trilogy',
         color: '#98C1D9',
-        data: [{x:  1977,  y: 1583483200, name: 'Star Wars', dataLabels: { enabled: true,  format: 'Star Wars'}},
-{x:  1980,  y: 872825900, name: 'The Empire Strikes Back', dataLabels: { enabled: true,  format: 'The Empire Strikes Back'}},
-{x:  1983,  y: 836188200, name: 'Return of the Jedi', dataLabels: { enabled: true,  format: 'Return of the Jedi'}},]
+        data: [{x:  8.6,  y: 1583483200, name: 'Star Wars', dataLabels: { enabled: true,  format: 'Star Wars'}},
+{x:  8.7,  y: 872825900, name: 'The Empire Strikes Back', dataLabels: { enabled: true,  format: 'The Empire Strikes Back'}},
+{x:  8.3,  y: 836188200, name: 'Return of the Jedi', dataLabels: { enabled: true,  format: 'Return of the Jedi'}},]
 
     }, {
         name: 'Prequels',
         color: '#EE6C4D',
-        data: [{x:  1999,  y: 802874300, name: 'Star Wars: Episode I - The Phantom Menace', dataLabels: { enabled: true,  format: 'Star Wars: Episode I - The Phantom Menace'}},
-{x:  2005,  y: 527395500, name: 'Star Wars: Episode III - Revenge of the Sith', dataLabels: { enabled: true,  format: 'Star Wars: Episode III - Revenge of the Sith'}},
-{x:  2002,  y: 475334700, name: 'Star Wars: Episode II - Attack of the Clones', dataLabels: { enabled: true,  format: 'Star Wars: Episode II - Attack of the Clones'}},]
+        data: [{x:  6.5,  y: 802874300, name: 'Star Wars: Episode I - The Phantom Menace', dataLabels: { enabled: true,  format: 'Star Wars: Episode I - The Phantom Menace'}},
+{x:  7.6,  y: 527395500, name: 'Star Wars: Episode III - Revenge of the Sith', dataLabels: { enabled: true,  format: 'Star Wars: Episode III - Revenge of the Sith'}},
+{x:  6.6,  y: 475334700, name: 'Star Wars: Episode II - Attack of the Clones', dataLabels: { enabled: true,  format: 'Star Wars: Episode II - Attack of the Clones'}},]
 
     }, {
         name: 'New Generation',
         color: '#293241',
-        data: [{x:  2015,  y: 961143200, name: 'Star Wars: The Force Awakens', dataLabels: { enabled: true,  format: 'Star Wars: The Force Awakens'}},
-{x:  2016,  y: 537326000, name: 'Rogue One: A Star Wars Story', dataLabels: { enabled: true,  format: 'Rogue One: A Star Wars Story'}},]
+        data: [{x:  8,  y: 961143200, name: 'Star Wars: The Force Awakens', dataLabels: { enabled: true,  format: 'Star Wars: The Force Awakens'}},
+{x:  7.9,  y: 537326000, name: 'Rogue One: A Star Wars Story', dataLabels: { enabled: true,  format: 'Rogue One: A Star Wars Story'}},]
 
     }
   ]

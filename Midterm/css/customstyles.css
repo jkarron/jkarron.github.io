@@ -121,7 +121,7 @@ h4{
   }
   .graphicblock{
     border: 0px;
-    border-bottom: 2px solid #777;
+    border-bottom: 2px solid #98C1D9;
     padding: 20px;
   }
   .topsection{
@@ -130,6 +130,7 @@ h4{
   .topsection h1{
     font-size: 3.8rem;
   }
+
 }
 @media only screen and (min-width: 768px){
   .col-sm-12{
