@@ -102,6 +102,10 @@ p, .lead{
   background-color: #ffffff;
 }
 
+#buttontwo{
+  display: none;
+}
+
 /*media query section*/
 @media only screen and (max-width: 767px){
   .textblock{
