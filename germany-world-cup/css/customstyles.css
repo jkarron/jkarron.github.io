@@ -105,6 +105,9 @@ p, .lead{
 #buttontwo{
   display: none;
 }
+#buttonfour{
+  display: none;
+}
 
 /*media query section*/
 @media only screen and (max-width: 767px){
