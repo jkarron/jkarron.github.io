@@ -1,0 +1,13 @@
+body {
+  max-width: 600px;
+}
+
+#container {
+  width: 100%;
+  height: 600px;
+}
+
+#winlosschart{
+  height: 600px;
+  width: 800px;
+}
