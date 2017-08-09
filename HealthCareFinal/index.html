@@ -164,18 +164,18 @@
         text: 'Stacked bar chart'
     },
     subtitle: {
-        text: 'Source:'
+        text: 'Source: American College of Surgeons and National Cancer Database Benchmarks http://oliver.facs.org/BMPub/'
     },
     credits: {
       enabled: false
     },
     xAxis: {
-        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        categories: ['Stage 0', 'Stage 1', 'Stage2', 'Stage 3', 'Stage 4', 'NA and UNK']
     },
     yAxis: {
         min: 0,
         title: {
-            text: 'Total fruit consumption'
+            text: 'Percentage'
         }
     },
     legend: {
@@ -187,14 +187,11 @@
         }
     },
     series: [{
-        name: 'John',
-        data: [5, 3, 4, 7, 2]
+        name: '2006-2009',
+        data: [20.05, 37.23, 25, 9.16,3.88, 4.57]
     }, {
-        name: 'Jane',
-        data: [2, 2, 3, 2, 1]
-    }, {
-        name: 'Joe',
-        data: [3, 4, 4, 2, 5]
+        name: '2011-2014',
+        data: [20.73, 40.80, 24.75, 8.36, 4.16, 1.21]
     }]
 });
         </script>
