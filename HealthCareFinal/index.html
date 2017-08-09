@@ -59,17 +59,18 @@
       <div class="col-sm-6 col-sm-offset-3 topbox">
         <h1>Maryland's Increase in Stage 1 Breast Cancer Rates</h1>
         <div class="byline"><span class="lowercase">by</span> Julia Karron</div>
-        <p class="lead">An increase in stage 1 breast cancer rates means catching deadly cancers earlier and saving more women's lives. This story -- told through graphics -- documents how the Affordable Care Act's preventive service mandate and 3-D mammography helped women.</p>
+        <p class="lead">An increase in stage 1 breast cancer rates means catching deadly cancers earlier and saving more women's lives. This story -- told through graphics -- documents how the Affordable Care Act's preventive service mandate and helped women.</p>
       </div>
     </div>
 <!--start of graphic container 1 section-->
     <div class="row graphiccontainer" id="one">
       <div class="textblock col-sm-3 co-sm-offset-1">
         <div class="col-sm-12 graphictitle">
-          <h2>Line graph of increase in id's over time</h2>
+          <h2>Technology Increased Incidence Rates</h2>
         </div>
         <div class="col-sm-12 graphictext">
-          <p>Timeline of how treatment has evolved.</p>
+          <p>When mammography became the industry standard for indentifying breast cancer in the 80's the number of identified invasive breast cancers increased.</p>
+          <p>But this wasn't because more women had cancer: it was because better technology meant doctors could catch more cancers, the Surveillance, Epidemiology, and End Results Program said.</p>
         </div>
       </div>
       <div class="col-sm-7 graphicblock">
@@ -80,11 +81,11 @@
           Highcharts.chart('linechart', {
 
     title: {
-        text: 'Solar Employment Growth by Sector, 2010-2016'
+        text: 'Increase in Incidences of Invasive Breast Cancers, 1975-2014'
     },
 
     subtitle: {
-        text: 'Source: thesolarfoundation.com'
+        text: 'Source: www.seer.cancer.gov/csr/1975_2014/download_csr_datafile.php/sect_04_table.08.csv'
     },
 
     credits: {
@@ -93,7 +94,7 @@
 
     yAxis: {
         title: {
-            text: 'Number of Employees'
+            text: 'Number of Incidences'
         }
     },
     legend: {
@@ -104,12 +105,12 @@
 
     plotOptions: {
         series: {
-            pointStart: 2010
+            pointStart: 1975
         }
     },
 
     series: [{
-        name: 'Installation',
+        name: 'Incidences',
         data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
     }]
 
@@ -124,10 +125,12 @@
     <div class="row graphiccontainer" id="two">
       <div class="textblock col-sm-3 co-sm-offset-1">
         <div class="col-sm-12 graphictitle">
-          <h2>Maryland Counties map</h2>
+          <h2>Mortality Rate Per Maryland County Due To Breast Cancer</h2>
         </div>
         <div class="col-sm-12 graphictext">
-          <p>Carto map per county</p>
+          <p>Before the Affordable Care Act was implemented, women without insurance couldn't afford mammograms.</p>
+          <p>After its implementation, cancers were caught at earlier stages, leading to better health outcomes.</p>
+          <p>In nearly every Maryland county, the percentage change was a decrease after the ACA was implemented.</p>
         </div>
       </div>
       <div class="col-sm-7 graphicblock">
@@ -140,10 +143,12 @@
   <div class="row graphiccontainer" id="three">
     <div class="textblock col-sm-3 co-sm-offset-1">
       <div class="col-sm-12 graphictitle">
-        <h2>Maryland increase</h2>
+        <h2>Maryland Followed the National Trend</h2>
       </div>
       <div class="col-sm-12 graphictext">
-        <p>Highcharts bar graph w/ data</p>
+        <p>Nationally, there was an increase in stage 1 identified breast cancers according to August's volume of Cancer Epidemiology.</p>
+        <p>Maryland women have experienced that same increase, with a percentage point jump in stage 1 identified breast cancers.</p>
+        <p>This chart shows that increase between the number of stage 1 identified breast cancers from 2006-2009 and 2011-2014.</p>
       </div>
     </div>
     <div class="col-sm-7 graphicblock">
@@ -195,10 +200,13 @@
   <div class="row graphiccontainer" id="four">
     <div class="textblock col-sm-3 co-sm-offset-1">
       <div class="col-sm-12 graphictitle">
-        <h2>Black women MD </h2>
+        <h2>Maryland's Black Women Followed National Trend</h2>
       </div>
       <div class="col-sm-12 graphictext">
-        <p>Rates black women md.</p>
+        <p>Black women in Maryland also saw an increase in stage 1 breast cancer.</p>
+        <p>The incidence of breast cancer among black women is almost the same as white women.</p>
+        <p>However, the mortality rate is nearly double.</p>
+        <p>This trend towards earlier screenigns could produce a drop in the mortalit rate of black women.</p>
         <button type="button" id="serieshide" class="btn btn-primary btn-xs btntwo"><span class="fliptwo" id="buttonthree">Hide series</span><span class="fliptwo" id="buttonfour">Show series</span></button>
       </div>
     </div>
@@ -250,10 +258,12 @@
     <div class="row graphiccontainer" id="five">
       <div class="textblock col-sm-3 co-sm-offset-1">
         <div class="col-sm-12 graphictitle">
-          <h2>No insurance</h2>
+          <h2>Those Without Insurance Suffer</h2>
         </div>
         <div class="col-sm-12 graphictext">
-          <p>Lack of insurance explainer.</p>
+          <p>If a woman lacks insurance, she is twice as likely to have not gotten a mammogram in the past two years.</p>
+          <p>For women who need access to mammograhy screenings, having insurance eliminates the financial barrier.</p>
+          <p>Under the ACA, there is no out-of-pocket cost for a mammogram because it falls under the preventive service mandate.</p>
           <button type="button" id="serieshide" class="btn btn-primary btn-xs btntwo"><span class="fliptwo" id="buttonthree">Hide series</span><span class="fliptwo" id="buttonfour">Show series</span></button>
         </div>
       </div>
