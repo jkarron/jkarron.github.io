@@ -9,6 +9,10 @@ body {
   font-family: 'Open Sans', Helvetica,sans-serif;
 }
 
+.navbar{
+  background-color:  #ffc6c4;
+}
+
 .topsection{
   text-align: center;
   margin: 20px 0px 0px 0px;
