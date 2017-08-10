@@ -161,7 +161,7 @@
         type: 'bar'
     },
     title: {
-        text: 'Stacked bar chart'
+        text: 'Increases in Incidences of Stage 1 Breast Cancer'
     },
     subtitle: {
         text: 'Source: American College of Surgeons and National Cancer Database Benchmarks http://oliver.facs.org/BMPub/'
@@ -170,7 +170,7 @@
       enabled: false
     },
     xAxis: {
-        categories: ['Stage 0', 'Stage 1', 'Stage2', 'Stage 3', 'Stage 4', 'NA and UNK']
+        categories: ['Stage 0', 'Stage 1', 'Stage 2', 'Stage 3', 'Stage 4', 'NA and UNK']
     },
     yAxis: {
         min: 0,
@@ -186,9 +186,14 @@
             stacking: 'normal'
         }
     },
+    tooltip: {
+        headerFormat: '<b>{point.key}</b><br>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>'
+    },
     series: [{
         name: '2006-2009',
-        data: [20.05, 37.23, 25, 9.16,3.88, 4.57]
+        data: [20.05, 37.23, 25, 9.16, 3.88, 4.57]
     }, {
         name: '2011-2014',
         data: [20.73, 40.80, 24.75, 8.36, 4.16, 1.21]
@@ -222,21 +227,21 @@
           type: 'bar'
       },
       title: {
-          text: 'Stacked bar chart'
+          text: 'Increases in Incidences of Stage 1 Breast Cancer In Black Women'
       },
       subtitle: {
-          text: 'Source:'
+          text: 'Source: American College of Surgeons and National Cancer Database Benchmarks http://oliver.facs.org/BMPub/'
       },
       credits: {
         enabled: false
       },
       xAxis: {
-          categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+          categories: ['Stage 0', 'Stage 1', 'Stage 2', 'Stage 3', 'Stage 4', 'NA and UNK']
       },
       yAxis: {
           min: 0,
           title: {
-              text: 'Total fruit consumption'
+              text: 'Percentage'
           }
       },
       legend: {
@@ -247,15 +252,17 @@
               stacking: 'normal'
           }
       },
+      tooltip: {
+          headerFormat: '<b>{point.key}</b><br>',
+          pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+              '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>'
+      },
       series: [{
-          name: 'John',
-          data: [5, 3, 4, 7, 2]
+          name: '2006-2009',
+          data: [20.4, 29, 27.6, 12.1, 5, 5.5]
       }, {
-          name: 'Jane',
-          data: [2, 2, 3, 2, 1]
-      }, {
-          name: 'Joe',
-          data: [3, 4, 4, 2, 5]
+          name: '2011-2014',
+          data: [23.1, 32, 27.2, 29.4, 5, 1.4]
       }]
   });
           </script>
@@ -285,41 +292,38 @@
                 type: 'column'
             },
             title: {
-                text: 'Monthly Average Rainfall'
+                text: 'Uninsured Percentage vs Insured Percentage 1993-2010'
             },
             subtitle: {
-                text: 'Source: WorldClimate.com'
+                text: 'Source: Cancer Prevention & Early Detection Facts & Figures 2015-2016 courtesy of American Cancer Society https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/cancer-prevention-and-early-detection-facts-and-figures/cancer-prevention-and-early-detection-facts-and-figures-2015-2016.pdf'
             },
             credits: {
               enabled: false
             },
             xAxis: {
                 categories: [
-                    'Jan',
-                    'Feb',
-                    'Mar',
-                    'Apr',
-                    'May',
-                    'Jun',
-                    'Jul',
-                    'Aug',
-                    'Sep',
-                    'Oct',
-                    'Nov',
-                    'Dec'
+                    '1993',
+                    '1994',
+                    '1998',
+                    '1999',
+                    '2000',
+                    '2003',
+                    '2005',
+                    '2008',
+                    '2010'
                 ],
                 crosshair: true
             },
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Rainfall (mm)'
+                    text: 'Percent Insured'
                 }
             },
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
                 footerFormat: '</table>',
                 shared: true,
                 useHTML: true
@@ -331,12 +335,12 @@
                 }
             },
             series: [{
-                name: 'Tokyo',
-                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                name: 'Insured',
+                data: [66.2, 68.3, 72.3, 75.5, 76.0, 75.1, 72.5, 73.4, 74.1]
 
             }, {
-                name: 'New York',
-                data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                name: 'Uninsured',
+                data: [36.0, 34.0, 40.1, 44.8, 40.7, 41.5, 38.1, 39.7, 36.0]
 
             }]
         });
