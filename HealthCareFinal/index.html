@@ -143,7 +143,7 @@
           Highcharts.chart('linechart', {
 
     title: {
-        text: 'Increase in Incidences of Invasive Breast Cancers, 1975-2014'
+        text: 'Breast Cancer Diagnosis Rate, 1975-2014'
     },
 
     subtitle: {
@@ -154,15 +154,24 @@
       enabled: false
     },
 
+    xAxis: {
+      plotBands: [{
+        color: '#ffc6c4', // Color value
+        from: 1982, // Start of the plot band
+        to: 1990, // End of the plot band
+        label: {
+          text: 'Mammography<br>Becomes</br><br>Standard</br>',
+          align: 'left',}
+      }],
+    },
+
     yAxis: {
         title: {
-            text: 'Number of Incidences'
+            text: 'Diagnosed Breast Cancers in All Women'
         }
     },
     legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
+      enabled: false
     },
 
     plotOptions: {
@@ -173,6 +182,7 @@
 
     series: [{
         name: 'Incidences',
+        color: '#9e3963',
         data: [105.08, 101.94, 100.8, 100.62, 102.09, 102.24, 106.36, 106.49, 111.12, 115.99, 124.26, 126.79, 134.5, 131.34, 127.25, 131.9, 133.86, 132.09, 129.2, 131, 132.7, 133.76, 138.06, 141.47, 141.49, 136.58, 138.83, 135.87, 127.1, 128.19, 126.69, 126.42, 128.29, 128.48, 130.93, 126.96, 130.38, 130.08, 130.85, 130.55]
     }]
 
