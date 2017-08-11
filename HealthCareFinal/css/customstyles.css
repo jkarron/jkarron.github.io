@@ -83,8 +83,8 @@ img{
   border: 1px solid #aaa;
   z-index: 1;
   position: absolute;
-  bottom: 10px;
-  right: 20px;
+  bottom: 20px;
+  left: 20px;
   background-color: #eee;
 }
 
