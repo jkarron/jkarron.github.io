@@ -39,7 +39,11 @@ text-transform: lowercase;
 p, .lead{
   font-size: 1.75rem;
 }
-
+img{
+  height: 345;
+  width: 460;
+    margin: auto;
+}
 .graphiccontainer{
   margin: 0px 0px 20px 0px;
   padding: 20px;
