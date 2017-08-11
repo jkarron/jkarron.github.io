@@ -12,7 +12,7 @@ $(".item").click(function(){
     $("#myCarousel").carousel(1);
 });
 
-// Enable Carousel Controls
+// Enable Carousel Controls. Thanks to WS3 Schools for the code/placement of said code
 $(".left").click(function(){
     $("#myCarousel").carousel("prev");
 });
