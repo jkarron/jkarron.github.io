@@ -39,6 +39,7 @@ text-transform: lowercase;
 p, .lead{
   font-size: 1.75rem;
 }
+
 img{
   height: 345;
   width: 460;
