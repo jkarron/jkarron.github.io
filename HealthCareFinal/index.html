@@ -69,7 +69,7 @@
       <div class="col-sm-6 col-sm-offset-3 topbox">
         <h1>Maryland's Increase in Stage 1 Breast Cancer Rates</h1>
         <div class="byline"><span class="lowercase">by</span> Julia Karron</div>
-        <p class="lead">An increase in stage 1 breast cancer rates means catching deadly cancers earlier and saving more women's lives. This story -- told through graphics -- documents how the Affordable Care Act's preventive service mandate and helped women.</p>
+        <p class="lead">An increase in stage 1 breast cancer rates means catching deadly cancers earlier and saving more women's lives. This story -- told through graphics -- documents how the Affordable Care Act's preventive service mandate helped women.</p>
       </div>
     </div>
 <!--end of top section-->
@@ -124,7 +124,11 @@
       </a>
     </div>
   </div>
+<<<<<<< HEAD
 <!--end of carousel section-->
+=======
+  <!--end of carousel section. Thanks to WS3 Schools for the code/placement of said code-->
+>>>>>>> 2414a1ed2ea726e53c778353733d2f1cbf26b0eb
 
 <!--start of graphic container 1 section-->
     <div class="row graphiccontainer" id="one">
@@ -145,7 +149,7 @@
           Highcharts.chart('linechart', {
 
     title: {
-        text: 'Increase in Incidences of Invasive Breast Cancers, 1975-2014'
+        text: 'Breast Cancer Diagnosis Rate, 1975-2014'
     },
 
     subtitle: {
@@ -156,15 +160,24 @@
       enabled: false
     },
 
+    xAxis: {
+      plotBands: [{
+        color: '#ffc6c4', // Color value
+        from: 1982, // Start of the plot band
+        to: 1990, // End of the plot band
+        label: {
+          text: 'Mammography<br>Becomes</br><br>Standard</br>',
+          align: 'center',}
+      }],
+    },
+
     yAxis: {
         title: {
-            text: 'Number of Incidences'
+            text: 'Diagnosed Breast Cancers in All Women'
         }
     },
     legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
+      enabled: false
     },
 
     plotOptions: {
@@ -175,6 +188,7 @@
 
     series: [{
         name: 'Incidences',
+        color: '#9e3963',
         data: [105.08, 101.94, 100.8, 100.62, 102.09, 102.24, 106.36, 106.49, 111.12, 115.99, 124.26, 126.79, 134.5, 131.34, 127.25, 131.9, 133.86, 132.09, 129.2, 131, 132.7, 133.76, 138.06, 141.47, 141.49, 136.58, 138.83, 135.87, 127.1, 128.19, 126.69, 126.42, 128.29, 128.48, 130.93, 126.96, 130.38, 130.08, 130.85, 130.55]
     }]
 
@@ -197,7 +211,7 @@
           <p>In most Maryland counties, the percentage change was a decrease after the ACA was implemented.</p>
           <p>Some saw an increase in mortality rates.</p>
           <p>Click on each county to see whether their mortality rate due to breast cancer went up or down.</p>
-          <button type="button" id="legendhide" class="btn btn-primary btn-xs buttonone"><span class="flipflop" id="buttonone">Hide legend</span><span class="flipflop" id="buttontwo">Show legend</span></button>
+          <button type="button" id="legendhide" class="btn btn-primary btn-xs buttonone"><span class="flipflop" id="buttonone">Hide Legend</span><span class="flipflop" id="buttontwo">Show legend</span></button>
         </div>
       </div>
       <div class="col-sm-7 graphicblock">
@@ -289,7 +303,6 @@
         <p>The incidence of breast cancer among black women is almost the same as white women.</p>
         <p>However, the mortality rate is nearly double.</p>
         <p>This trend towards earlier screenigns could produce a drop in the mortalit rate of black women.</p>
-        <button type="button" id="serieshide" class="btn btn-primary btn-xs btntwo"><span class="fliptwo" id="buttonthree">Hide series</span><span class="fliptwo" id="buttonfour">Show series</span></button>
       </div>
     </div>
     <div class="col-sm-7 graphicblock">
@@ -345,6 +358,7 @@
     </div>
   </div>
 <!--start of graphic container 5-->
+<!-- Change to line graph of uninsured if no word from CDC by Sunday-->
     <div class="row graphiccontainer" id="five">
       <div class="textblock col-sm-3 co-sm-offset-1">
         <div class="col-sm-12 graphictitle">
@@ -354,7 +368,6 @@
           <p>If a woman lacks insurance, she is twice as likely to have not gotten a mammogram in the past two years.</p>
           <p>For women who need access to mammograhy screenings, having insurance eliminates the financial barrier.</p>
           <p>Under the ACA, there is no out-of-pocket cost for a mammogram because it falls under the preventive service mandate.</p>
-          <button type="button" id="serieshide" class="btn btn-primary btn-xs btntwo"><span class="fliptwo" id="buttonthree">Hide series</span><span class="fliptwo" id="buttonfour">Show series</span></button>
         </div>
       </div>
       <div class="col-sm-7 graphicblock">
@@ -410,10 +423,13 @@
             },
             series: [{
                 name: 'Insured',
+                color: '#ee919b',
                 data: [66.2, 68.3, 72.3, 75.5, 76.0, 75.1, 72.5, 73.4, 74.1]
+
 
             }, {
                 name: 'Uninsured',
+                color: '#cc607d',
                 data: [36.0, 34.0, 40.1, 44.8, 40.7, 41.5, 38.1, 39.7, 36.0]
 
             }]
