@@ -284,47 +284,75 @@
         <script src="Highcharts-5.0.13/code/highcharts.js"></script>
         <script>
         Highcharts.chart('allmd', {
-    chart: {
-        type: 'bar'
-    },
-    title: {
-        text: 'Increases in Incidences of Stage 1 Breast Cancer'
-    },
-    subtitle: {
-        text: 'Source: American College of Surgeons and National Cancer Database Benchmarks http://oliver.facs.org/BMPub/'
-    },
-    credits: {
-      enabled: false
-    },
-    xAxis: {
-        categories: ['Stage 0', 'Stage 1', 'Stage 2', 'Stage 3', 'Stage 4', 'NA and UNK']
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Percentage'
-        }
-    },
-    legend: {
-        reversed: true
-    },
-    plotOptions: {
-        series: {
-        }
-    },
-    tooltip: {
-        headerFormat: '<b>{point.key}</b><br>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>'
-    },
-    series: [{
-        name: '2006-2009',
-        data: [20.05, 37.23, 25, 9.16, 3.88, 4.57]
-    }, {
-        name: '2011-2014',
-        data: [20.73, 40.80, 24.75, 8.36, 4.16, 1.21]
-    }]
-});
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Historic World Population by Region'
+            },
+            subtitle: {
+                text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+            },
+            xAxis: {
+                type: 'category',
+                title: {
+                    text: 'Stage',
+
+                },
+
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Percentage',
+
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: '2011-2014',
+                color: '#cc607d',
+                data: [
+                      [' 0', 20.73],
+                      [' I', 40.8],
+                      [' II', 24.75],
+                      [' III', 8.36],
+                      [' IV', 4.16],
+                      [' NA', 0.07],
+                      [' UNK', 1.14]]
+            }, {
+                name: '2006-2009',
+                color: '#ee919b',
+                data: [
+                  [' 0', 20.05],
+                  [' I', 37.23],
+                  [' II', 25],
+                  [' III', 9.16],
+                  [' IV', 3.88],
+                  [' NA', 0.08],
+                  [' UNK', 4.59]
+                ]
+            }]
+        });
+
         </script>
       </div>
     </div>
@@ -348,48 +376,74 @@
         <div id="blackmd">
           <script>
           Highcharts.chart('blackmd', {
-      chart: {
-          type: 'bar'
-      },
-      title: {
-          text: 'Increases in Incidences of Stage 1 Breast Cancer In Black Women'
-      },
-      subtitle: {
-          text: 'Source: American College of Surgeons and National Cancer Database Benchmarks http://oliver.facs.org/BMPub/'
-      },
-      credits: {
-        enabled: false
-      },
-      xAxis: {
-          categories: ['Stage 0', 'Stage 1', 'Stage 2', 'Stage 3', 'Stage 4', 'NA and UNK']
-      },
-      yAxis: {
-          min: 0,
-          title: {
-              text: 'Percentage'
-          }
-      },
-      legend: {
-          reversed: true
-      },
-      plotOptions: {
-          series: {
+              chart: {
+                  type: 'bar'
+              },
+              title: {
+                  text: 'Historic World Population by Region'
+              },
+              subtitle: {
+                  text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+              },
+              xAxis: {
+                  type: 'category',
+                  title: {
+                      text: 'Stage',
 
-          }
-      },
-      tooltip: {
-          headerFormat: '<b>{point.key}</b><br>',
-          pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-              '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>'
-      },
-      series: [{
-          name: '2006-2009',
-          data: [20.4, 29, 27.6, 12.1, 5, 5.5]
-      }, {
-          name: '2011-2014',
-          data: [23.1, 32, 27.2, 29.4, 5, 1.4]
-      }]
-  });
+                  },
+
+              },
+              yAxis: {
+                  min: 0,
+                  title: {
+                      text: 'Percentage',
+
+                  },
+                  labels: {
+                      overflow: 'justify'
+                  }
+              },
+              tooltip: {
+                  valueSuffix: '%'
+              },
+              plotOptions: {
+                  bar: {
+                      dataLabels: {
+                          enabled: true
+                      }
+                  }
+              },
+              legend: {
+
+              },
+              credits: {
+                  enabled: false
+              },
+              series: [{
+                  name: '2011-2014',
+                  color: '#cc607d',
+                  data: [
+                        [' 0', 20.73],
+                        [' I', 40.8],
+                        [' II', 24.75],
+                        [' III', 8.36],
+                        [' IV', 4.16],
+                        [' NA', 0.07],
+                        [' UNK', 1.14]]
+              }, {
+                  name: '2006-2009',
+                  color: '#ee919b',
+                  data: [
+                    [' 0', 20.05],
+                    [' I', 37.23],
+                    [' II', 25],
+                    [' III', 9.16],
+                    [' IV', 3.88],
+                    [' NA', 0.08],
+                    [' UNK', 4.59]
+                  ]
+              }]
+          });
           </script>
         </div>
       </div>
