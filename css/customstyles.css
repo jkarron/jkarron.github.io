@@ -37,7 +37,13 @@ body {
     display: inline;
     background-color: #778899;
   }
-
+  img {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 40%;
+      border: 2px solid #778899;
+  }
 /*sectiontitle edits*/
 .sectiontitle{
   font-family: 'Raleway', sans-serif;
