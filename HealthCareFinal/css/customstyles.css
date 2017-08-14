@@ -79,7 +79,7 @@ p, .lead{
 }
 
 .legendbox{
-  width: 100px;
+  width: 90px;
   height: 300px;
   border: 1px solid #aaa;
   z-index: 1;
