@@ -88,7 +88,12 @@ body {
   #top{
     position: static;
     font-size: 1em;
-    margin: 30px 0px 35px 0px;
+    margin: 55px 0px 35px 0px;
+    background-color: #ffffff;
+
+  }
+  .title, .contact{
+    font-size: 15px;
   }
 /*this small it looks weird with inside shadow. got rid of it*/
   .rightcontainer, #alljobs{
