@@ -312,12 +312,15 @@
                 }
             },
             tooltip: {
-                valueSuffix: '%'
+                valueSuffix: '%',
+
             },
             plotOptions: {
                 bar: {
                     dataLabels: {
+                      format: '{point.y:.1f}%',
                         enabled: true
+
                     }
                 }
             },
@@ -328,6 +331,7 @@
                 enabled: false
             },
             series: [{
+
                 name: '2011-2014',
                 color: '#cc607d',
                 data: [
@@ -407,6 +411,7 @@
               plotOptions: {
                   bar: {
                       dataLabels: {
+                        format: '{point.y:.1f}%',
                           enabled: true
                       }
                   }
@@ -502,8 +507,10 @@
             },
             plotOptions: {
                 column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
+                  dataLabels: {
+                    format: '{point.y:.1f}%',
+                      enabled: true
+                    }
                 }
 
             },
