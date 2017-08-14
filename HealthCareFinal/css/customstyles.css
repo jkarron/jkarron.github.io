@@ -72,7 +72,25 @@ p, .lead{
   padding: 0px 20px;
   border-left: 2px solid #777;
 }
+/*chartist section*/
+.ct-label .ct-chart-line{
+  font-size: 15px;
+}
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: pink;
+  /* Size of your points */
+  stroke-width: 10px;
+  /* Make your points appear as shape */
+  stroke-linecap: square;
+}
+.ct-series-a .ct-line {
+  /* Colour of line */
+  color: #9e3963;
 
+  /* Size of line */
+  stroke-width: 3px;
+}
 /*legend box section*/
 .legendbox h4{
   padding-left: 10px;
