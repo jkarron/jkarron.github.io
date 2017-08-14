@@ -185,12 +185,12 @@
     },
 
     series: [{
-        name: 'Incidences',
+        name: 'Diagnoses per 100,000',
         color: '#9e3963',
         data: [{y: 105.08, name: '1975', dataLabels: { enabled: false,  format: '1975'}},
 {y: 101.94, name: '1976', dataLabels: { enabled: false,  format: '1976'}},
 {y: 100.8, name: '1977', dataLabels: { enabled: false,  format: '1977'}},
-{y: 100.62, name: '1978', dataLabels: { enabled: true,  format: '1978'}},
+{y: 100.62, name: '1978', dataLabels: { enabled: true,  format: '100.62'}},
 {y: 102.09, name: '1979', dataLabels: { enabled: false,  format: '1979'}},
 {y: 102.24, name: '1980', dataLabels: { enabled: false,  format: '1980'}},
 {y: 106.36, name: '1981', dataLabels: { enabled: false,  format: '1981'}},
@@ -199,7 +199,7 @@
 {y: 115.99, name: '1984', dataLabels: { enabled: false,  format: '1984'}},
 {y: 124.26, name: '1985', dataLabels: { enabled: false,  format: '1985'}},
 {y: 126.79, name: '1986', dataLabels: { enabled: false,  format: '1986'}},
-{y: 134.5, name: '1987', dataLabels: { enabled: true,  format: '1987'}},
+{y: 134.5, name: '1987', dataLabels: { enabled: true,  format: '134.5'}},
 {y: 131.34, name: '1988', dataLabels: { enabled: false,  format: '1988'}},
 {y: 127.25, name: '1989', dataLabels: { enabled: false,  format: '1989'}},
 {y: 131.9, name: '1990', dataLabels: { enabled: false,  format: '1990'}},
@@ -211,7 +211,7 @@
 {y: 133.76, name: '1996', dataLabels: { enabled: false,  format: '1996'}},
 {y: 138.06, name: '1997', dataLabels: { enabled: false,  format: '1997'}},
 {y: 141.47, name: '1998', dataLabels: { enabled: false,  format: '1998'}},
-{y: 141.49, name: '1999', dataLabels: { enabled: true,  format: '1999'}},
+{y: 141.49, name: '1999', dataLabels: { enabled: true,  format: '141.49'}},
 {y: 136.58, name: '2000', dataLabels: { enabled: false,  format: '2000'}},
 {y: 138.83, name: '2001', dataLabels: { enabled: false,  format: '2001'}},
 {y: 135.87, name: '2002', dataLabels: { enabled: false,  format: '2002'}},
@@ -258,10 +258,10 @@
         <div class="col-sm-12 graphiccontent"><iframe class="map" src="https://jkarron.carto.com/builder/850442ea-8053-11e7-8612-0e3a376473ab/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B36.4566360115962%2C-81.74926757812501%5D%2C%22sw%22%3A%5B41.071069130806414%2C-72.71850585937501%5D%2C%22center%22%3A%5B38.804815000000005%2C-77.23697%5D%2C%22zoom%22%3A7%7D%7D" width="100%" height="480"></iframe></div>
         <div class="legendbox">
           <h4>Legend</h4>
-          <div class="legendentry topq">Top Quartile</div>
-          <div class="legendentry twoq">Second Quartile</div>
-          <div class="legendentry threeq">Third Quartile</div>
-          <div class="legendentry bottomq">Bottom Quartile</div>
+          <div class="legendentry topq">Large Mortality Rate Decrease</div>
+          <div class="legendentry twoq">Modest Mortality Rate Decrease</div>
+          <div class="legendentry threeq">Modest Mortality Rate Increase</div>
+          <div class="legendentry bottomq">Large Mortality Rate Increase</div>
         </div><!--closes .legendbox-->
       </div>
     </div>
@@ -288,7 +288,7 @@
                 type: 'bar'
             },
             title: {
-                text: 'Post ACA Increase in Stage 1 Breast Cancer, Maryland'
+                text: 'Post ACA Increase in Stage 1 Breast Cancer Diagnoses, Maryland'
             },
             subtitle: {
                 text: 'Source: <a href="http://oliver.facs.org/BMPub/">National Cancer Database Benchmarks via American College of Surgeons</a>'
@@ -331,24 +331,24 @@
                 name: '2011-2014',
                 color: '#cc607d',
                 data: [
-                      [' 0', 20.73],
-                      [' I', 40.8],
-                      [' II', 24.75],
-                      [' III', 8.36],
-                      [' IV', 4.16],
-                      [' NA', 0.07],
-                      [' UNK', 1.14]]
+                      ['Stage 0', 20.73],
+                      ['Stage I', 40.8],
+                      ['Stage II', 24.75],
+                      ['Stage III', 8.36],
+                      ['Stage IV', 4.16],
+                      ['Stage NA', 0.07],
+                      ['Stage UNK', 1.14]]
             }, {
                 name: '2006-2009',
                 color: '#ee919b',
                 data: [
-                  [' 0', 20.05],
-                  [' I', 37.23],
-                  [' II', 25],
-                  [' III', 9.16],
-                  [' IV', 3.88],
-                  [' NA', 0.08],
-                  [' UNK', 4.59]
+                  ['Stage 0', 20.05],
+                  ['Stage I', 37.23],
+                  ['Stage II', 25],
+                  ['Stage III', 9.16],
+                  ['Stage IV', 3.88],
+                  ['Stage NA', 0.08],
+                  ['Stage UNK', 4.59]
                 ]
             }]
         });
@@ -378,7 +378,7 @@
                   type: 'bar'
               },
               title: {
-                  text: 'Post ACA Increase in Stage 1 Breast Cancer, Black Women'
+                  text: 'Post ACA Increase in Stage 1 Breast Cancer Diagnoses, Black Women'
               },
               subtitle: {
                   text: 'Source: <a href="http://oliver.facs.org/BMPub/">National Cancer Database Benchmarks via American College of Surgeons</a>'
@@ -421,24 +421,24 @@
                   name: '2011-2014',
                   color: '#cc607d',
                   data: [
-                    [' 0', 23.1],
-                    [' I', 32],
-                    [' II', 27.2],
-                    [' III', 29.4],
-                    [' IV', 5],
-                    ['NA and UNK', 1.4]
+                    ['Stage 0', 23.1],
+                    ['Stage I', 32],
+                    ['Stage II', 27.2],
+                    ['Stage III', 29.4],
+                    ['Stage IV', 5],
+                    ['Stage NA and UNK', 1.4]
 
                       ]
               }, {
                     name: '2006-2009',
                     color: '#ee919b',
                     data: [
-                      [' 0', 20.4],
-                      [' I', 29],
-                      [' II', 27.6],
-                      [' III', 12.1],
-                      [' IV', 5],
-                      ['NA and UNK', 5.58]
+                      ['Stage 0', 20.4],
+                      ['Stage I', 29],
+                      ['Stage II', 27.6],
+                      ['Stage III', 12.1],
+                      ['Stage IV', 5],
+                      ['Stage NA and UNK', 5.58]
 
                     ]
               }]
@@ -505,6 +505,7 @@
                     pointPadding: 0.2,
                     borderWidth: 0
                 }
+
             },
             series: [{
                 name: 'Insured',
