@@ -148,23 +148,26 @@
         align: 'right',
         verticalAlign: 'middle'
     },
-
+    plotOptions: {
+           series: {
+            
+           }
+       },
 
     series: [{
         name: 'Number of IMDB Top 250 Movies',
         color: '#EE6C4D',
         dataLabels: {enabled: true},
-        data: [
-                { y: 6, name: '1920'},
-                { y: 7, name: '1930'},
-                { y: 12, name: '1940'},
-                { y: 25, name: '1950'},
-                { y: 18, name: '1960'},
-                { y: 21, name: '1970'},
-                { y: 28, name: '1980'},
-                { y: 42, name: '1990'},
-                { y: 53, name: '2000'},
-                { y: 38, name: '2010'}]
+        data: [{y: 6, name: '1920', dataLabels: { enabled: true,  format: '1920'}},
+{y: 7, name: '1930', dataLabels: { enabled: true,   format: '1930'}},
+{y: 12, name: '1940', dataLabels: { enabled: true,   format: '1940'}},
+{y: 25, name: '1950', dataLabels: { enabled: true,   format: '1950'}},
+{y: 18, name: '1960', dataLabels: { enabled: true,  format: '1960'}},
+{y: 21, name: '1970', dataLabels: { enabled: true,  format: '1970'}},
+{y: 28, name: '1980', dataLabels: { enabled: true, format: '1980'}},
+{y: 42, name: '1990', dataLabels: { enabled: true, format: '1990'}},
+{y: 53, name: '2000', dataLabels: { enabled: true,   format: '2000'}},
+{y: 38, name: '2010', dataLabels: { enabled: true, format: '2010'}},]
     }, {
         name: 'Median Line',
         data: [
