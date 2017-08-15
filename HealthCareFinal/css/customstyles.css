@@ -31,11 +31,15 @@ body {
   margin: 15px 0px 0px 20px;
   font-style: italic;
 }
-
+h3{
+  text-align: center;
+}
 span {
 text-transform: lowercase;
 }
-
+.source{
+  text-align: center;
+}
 p, .lead{
   font-size: 1.75rem;
 }
@@ -82,7 +86,11 @@ p, .lead{
   /* Size of your points */
   stroke-width: 10px;
   /* Make your points appear as shape */
-  stroke-linecap: square;
+  stroke-linecap: circle;
+}
+.ctThreshold{
+  stroke-dasharray: 5px;
+
 }
 .ct-series-a .ct-line {
   /* Colour of line */

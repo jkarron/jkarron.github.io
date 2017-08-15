@@ -7,7 +7,8 @@
 
 <script src="chart/chartist-js-master/dist/chartist.min.js"></script><!--Chartist script section, to replace highcharts code.-->
  <script src="chart/chartist-js-master/chartist-plugin-axistitle-master/dist/chartist-plugin-axistitle.js"></script>
-
+ <script src="chart/chartist-js-master/chartist-plugin-threshold-master/dist/chartist-plugin-threshold.js"></script>
+ <script src="chart/chartist-js-master/chartist-plugin-pointlabels-master/dist/chartist-plugin-pointlabels.js"></script>
 </head>
 <body>
   <div class="ct-chart ct-perfect-fourth"></div>
@@ -47,7 +48,14 @@
           textAnchor: 'middle',
           flipTitle: false
         }
-      })
+      }),
+      Chartist.plugins.ctThreshold({
+      threshold: 4
+    }),
+    Chartist.plugins.ctPointLabels({
+      textAnchor: 'middle',
+      
+    })
     ]
   });
 
