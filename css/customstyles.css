@@ -7,7 +7,7 @@ font-family: 'Merriweather', serif;*/
 }
 body {
   font-size: 16px;
-  background-color: #97d289;
+  background-color: #BBEAC7;
   margin: 0px;
   padding: 50px;
 }
@@ -33,7 +33,7 @@ body {
   }
   /*social media outlets*/
   .fa{
-    color: #97d289;
+    color: #BBEAC7;
     display: inline;
     background-color: #778899;
   }
