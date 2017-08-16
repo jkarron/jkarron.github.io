@@ -212,58 +212,66 @@
         <script src="Highcharts-5.0.13/code/highcharts.js"></script>
         <script>
         Highcharts.chart('director', {
-    chart: {
-        type: 'bar'
-    },
-    title: {
-        text: 'Directors In IMDB Top 20 and Box Office Mojo Top Adjusted Gross of All Time List'
-    },
-    subtitle: {
-        text: 'Source: IMDB and Box Office Mojo'
-    },
-    xAxis: {
-        categories: ['Director'],
-        title: {
-            text: null
-        }
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Number of films',
-            align: 'high'
-        },
-        labels: {
-            overflow: 'justify'
-        }
-    },
-    tooltip: {
-      headerFormat: '<b>{series.name} had [data--could not figure this aspect out] Movies on the IMDB Top 250 and Box Office Mojo Top 200 Adjusted Grossing Movies</b><br>'
-    },
-    plotOptions: {
-        bar: {
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    legend: {
-        enabled: false
-    },
-    credits: {
-        enabled: false
-    },
-    series: [{name: 'Disney/Pixar', data: [8], color: '#3D5A80'},
-{name: 'Steven Spielberg', data: [5], color: '#3D5A80'},
-{name: 'George Lucas', data: [3], color: '#3D5A80'},
-{name: 'Peter Jackson', data: [3], color: '#3D5A80'},
-{name: 'Christoper Nolan', data: [2], color: '#3D5A80'},
-{name: 'Alfred Hitchcock', data: [2], color: '#3D5A80'},
-{name: 'George Roy Hill', data: [2], color: '#3D5A80'},
-{name: 'Robert Zemeckis', data: [2], color: '#3D5A80'},]
-});
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text:  'Directors In IMDB Top 20 and Box Office Mojo Top Adjusted Gross of All Time List'
+            },
+            subtitle: {
+                text: 'Source: IMDB and Box Office Mojo'
+            },
+            xAxis: {
+                type: 'category',
+                title: {
+                    text: 'Director',
 
+                },
 
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of Films',
+
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+              headerFormat: '<b>{series.name} had {point.x:} Movies on the IMDB Top 250 and Box Office Mojo Top 200 Adjusted Grossing Movies</b><br>'
+
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+
+                    }
+                }
+            },
+            legend: {
+
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+
+                name: 'Director',
+                color: '#3D5A80',
+                data: [
+                      ['Disney/Pixar',  8],
+                      ['Steven Spielberg',  5],
+                      ['George Lucas',  3],
+                      ['Peter Jackson',  3],
+                      ['Christoper Nolan',  2],
+                      ['Alfred Hitchcock',  2],
+                      ['George Roy Hill',  2],
+                      ['Robert Zemeckis',  2]]
+            }]
+        });
         </script>
       </div> <!--closes graphiccontent-->
     </div><!--closes graphicblock-->
