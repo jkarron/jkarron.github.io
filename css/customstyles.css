@@ -84,7 +84,7 @@ body {
 /*media queries*/
 /*extra small device (phone)*/
 /*need 2nd media query for max screen of 400px*/
-@media only screen and (min-width: 400px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   #top{
     position: static;
     font-size: 1em;
