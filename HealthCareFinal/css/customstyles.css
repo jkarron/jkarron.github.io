@@ -49,6 +49,9 @@ p, .lead{
   width: 460;
   display: block;
 }
+.article{
+  padding: 10px;
+}
 .graphiccontainer{
   margin: 0px 0px 20px 0px;
   padding: 20px;
