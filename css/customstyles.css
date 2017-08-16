@@ -1,7 +1,8 @@
 /* No CSS Reset with Bootstrap */
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
 /* for font reference: raleway and merriweather fonts: font-family: 'Raleway', sans-serif;
-font-family: 'Merriweather', serif;*/
+font-family: 'Merriweather', serif;
+New color from coolors: #BBEAC7 for lighter mint green*/
 *{
   box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ body {
 }
 #top{
   border: 5px solid #778899;
-  box-shadow: 4px 4px rgba(0,0,0,0.2);
+  box-shadow: 2px rgba(0,0,0,0.2);
   margin: 10px 0px 35px 0px;
   padding: 0px;
 }
@@ -29,7 +30,7 @@ body {
   font-family: 'Merriweather', serif;
   font-weight: normal;
   font-style: italic;
-  font-size: 30px;
+  font-size: 20px;
   }
   /*social media outlets*/
   .fa{
@@ -41,22 +42,22 @@ body {
   img {
       display: block;
       margin: auto;
-      margin-bottom: 20px;
-      width: 40%;
+      margin-bottom: 10px;
+      height: 30%;
+      width: 30%;
       border: 2px solid #778899;
   }
 /*sectiontitle edits*/
 .sectiontitle{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   font-style: italic;
   margin: auto;
   padding: 10px;
-  text-transform: uppercase;
   border: 2px solid #778899;
   text-align: center;
-  box-shadow: 4px 4px #778899;
+  box-shadow: 2px 2px #778899;
 }
 
 /*within each box edits. this is for experience education skills and orgs*/
@@ -75,7 +76,7 @@ body {
 /*rightcontainer, row, and alljobs edits. everything these boxes have in common*/
 .rightcontainer, .row, #alljobs{
   border: 2px solid #778899;
-  box-shadow: 4px 2px #778899;
+  box-shadow: 2px 2px #778899;
   padding: 5px 10px;
   border: 5px 10px;
   background-color: #ffffff;
