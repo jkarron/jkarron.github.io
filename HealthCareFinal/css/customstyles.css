@@ -187,11 +187,11 @@ p, .lead{
     height: 125px;
     width: 300px;
     left: 20px;
-
   }
 }
 @media only screen and (min-width: 768px){
   .col-sm-12{
     width: 100%;
   }
+
 }
