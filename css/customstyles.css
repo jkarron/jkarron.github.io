@@ -43,15 +43,15 @@ body {
       display: block;
       margin: auto;
       margin-bottom: 10px;
-      height: 30%;
-      width: 30%;
+      height: 70%;
+      width: 70%;
       border: 2px solid #778899;
   }
 /*sectiontitle edits*/
 .sectiontitle{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 1.5em;
   font-style: italic;
   margin: auto;
   padding: 10px;
@@ -62,17 +62,24 @@ body {
 /*Website section edits*/
 
 /*within each box edits. this is for experience education skills and orgs*/
-.program, .details, .job, .website, .audio, .written{
+.program, .details, .job{
   font-family: 'Merriweather', serif;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
+}
+.website, .audio, .written{
+  margin: auto;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 /*within program, details, and job edits. this is for the stuff positioned below it*/
 .description, .degree, .software, .position{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   margin: auto;
-  padding: 10px;
 }
 /*rightcontainer, row, and alljobs edits. everything these boxes have in common*/
 .rightcontainer, .row, #alljobs{
@@ -97,6 +104,9 @@ body {
   .title, .contact{
     font-size: 15px;
   }
+  .website, .audio, .written{
+    font-size: 1.25em;
+  }
 /*this small it looks weird with inside shadow. got rid of it*/
   .rightcontainer, #alljobs{
     box-shadow: none;
@@ -112,6 +122,9 @@ body {
   #top{
     font-size: 1.5em;
     margin: 20px 0px 35px 0px;
+  }
+  .website, .audio, .written{
+    font-size: 1.25em;
   }
 }
 
