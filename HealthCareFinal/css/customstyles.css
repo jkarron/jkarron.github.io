@@ -172,6 +172,8 @@ p, .lead{
     border: 0px;
     border-bottom: 2px solid #777;
     padding: 10px;
+    margin-bottom: 20px;
+
   }
   .topsection{
     padding: 20px;
@@ -184,6 +186,7 @@ p, .lead{
     position: relative;
     height: 125px;
     width: 300px;
+    left: 20px;
 
   }
 }
