@@ -19,6 +19,10 @@ body {
   margin: 20px 0px 0px 0px;
 }
 
+.ct-line, .ct-point {
+  stroke: #9e3963 !important;
+}
+
 .topbox, h1{
   font-size: 5rem;
   font-weight: 600;
@@ -90,7 +94,7 @@ p, .lead{
 }
 .ct-series-a .ct-point {
   /* Colour of your points */
-  stroke: pink;
+  stroke: #9e3963;
   /* Size of your points */
   stroke-width: 10px;
   /* Make your points appear as shape */
