@@ -39,12 +39,12 @@ body {
     background-color: #778899;
   }
   /*photo edits*/
-  img {
+.img  img {
       display: block;
       margin: auto;
       margin-bottom: 10px;
-      height: 70%;
-      width: 70%;
+      height: 300px;
+      width: 300px;
       border: 2px solid #778899;
   }
 /*sectiontitle edits*/
@@ -113,6 +113,10 @@ body {
   }
   .row{
     box-shadow: 4px 2px #778899;
+  }
+.img  img{
+    height: 200px;
+    width: 200px;
   }
 }
 
