@@ -11,6 +11,7 @@ body {
 
 .navbar{
   background-color:  #ffc6c4;
+  overflow: hidden;
 }
 
 .topsection{
@@ -50,7 +51,7 @@ p, .lead{
   display: block;
 }
 .carousel-caption{
-  -webkit-text-stroke-width: .25px;
+  -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
 }
 .article{
@@ -161,18 +162,21 @@ p, .lead{
 @media only screen and (max-width: 767px){
   .textblock{
     margin: 0px;
-    padding: 20px;
+    padding: 10px;
   }
   .graphicblock{
     border: 0px;
     border-bottom: 2px solid #777;
-    padding: 20px;
+    padding: 10px;
   }
   .topsection{
     padding: 20px;
   }
   .topsection h1{
     font-size: 3.8rem;
+  }
+  .navbar-collapse{
+    
   }
 }
 @media only screen and (min-width: 768px){

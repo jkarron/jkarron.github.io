@@ -20,10 +20,5 @@ $(".left").click(function(){
 
 //Navbar controls. Add commands below when you know how they work
 $('.navbar-brand').click(function(){
-  $('.navbar-brand #1');
-  $('.navbar-brand #2');
-  $('.navbar-brand #3');
-  $('.navbar-brand #4');
-  $('.navbar-brand #5');
-  $('navbar-brand #6');  
+
 });
