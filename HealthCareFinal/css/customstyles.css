@@ -49,6 +49,10 @@ p, .lead{
   width: 460;
   display: block;
 }
+.carousel-caption{
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+}
 .article{
   padding: 10px;
 }
