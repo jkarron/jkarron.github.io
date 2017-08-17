@@ -17,8 +17,3 @@ $(".left").click(function(){
     $("#myCarousel").carousel("prev");
 });
 });
-
-//Navbar controls. Add commands below when you know how they work
-$('.navbar-brand').click(function(){
-
-});
