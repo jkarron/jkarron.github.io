@@ -50,7 +50,7 @@ p, .lead{
   display: block;
 }
 .carousel-caption{
-  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-width: .25px;
   -webkit-text-stroke-color: black;
 }
 .article{
