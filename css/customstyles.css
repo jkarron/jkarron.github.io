@@ -60,8 +60,10 @@ body {
   box-shadow: 2px 2px #778899;
 }
 /*Website section edits*/
-
-/*within each box edits. this is for experience education skills and orgs*/
+footer{
+  font-size: 1em;
+}
+/*within each box edits. this is for experience education skills and orgs, and website audio and written*/
 .program, .details, .job{
   font-family: 'Merriweather', serif;
   margin: auto;
